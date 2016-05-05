@@ -3,51 +3,37 @@
 \chapter{Introduction}
 \label{chapter:intro}
 
-This is my master's thesis, and I am very proud of it.  Of course,
-when I write my \emph{real} master's thesis, I will not use the
-singular pronoun \emph{I}, but rather try to avoid referring to myself
-and speak of the research \emph{we} have conducted---I rarely work
-alone, after all.  Yet, both \emph{I} and \emph{we} are correct, and
-it depends on the instructor and the supervisor (of course from you,
-too), which one they would prefer. Anyway, the tense should be active,
-and passive sentenses should be avoided (especially, writing sentences
-where the subject is presented with by preposition), so often you
-cannot avoid choosing between the pronouns. Life is strange, but there
-you have it.
+Software testing is a crucial part of modern software development and it is commonly accepted fact that the earlier defects and errors in the software are found, the lower the cost of correcting those will be. Early detection of errors also increases the possibility to correct them properly. (\emph{\cite{myers2011art}})
 
-By the way, the preferred order of writing your master's thesis is
-about the same as the outline of the thesis: you first discover your
-problem and write about that, then you find out what methods you
-should use and write about that.  Then you do your implementation, and
-document that, and so on.  However, the abstract and introduction are
-often easiest to write last.  This is because these really cover the
-entire thesis, and there is no way you could know what to put in your
-abstract before you have actually done your implementation and
-evaluation. Rarely anyone write the thesis from the beginning to the
-end just one time, but the writing is more like process, where every
-piece of text is written at least twice. Be also prepared to delete
-your own text. In the first phase, you can hide it into comments that
-are started with \% but during the writing, the many comments should be
-visible for your helpers, the instructor and supervisor.
+Acceptance testing is a process of comparing the developed program to to the initial requirements (\emph{\cite{myers2011art}}). Therefore especially in agile software development, automated acceptance testing (AAT) plays important role as new versions of software are being developed constantly and AAT phase should be executed whenever new features are added. Automation can free valuable human resources from the process (\emph{\cite{haugset2008automated}}) and therefore lover the overall cost of the software.
 
-The introduction in itself is rarely very long; two to five pages often
-suffice.
+According to \emph{\cite{sommerville2011software}} acceptance testing of a system should be executed at the final production environment, or at least at environment similar to the production environment. System should also be tested with real data rather than with simulated data. When the software being developed is actually embedded software and the production environment is actually real embedded system, in this case payment terminal, the acceptance testing should be executed on actual payment terminal with actually interacting through the user interface (UI) of the machine. This also leads to a situation where concerns pointed out above are actually being emphasized as late detection of defects in embedded software can considerably raise the overall cost of the system (\emph{\cite{ebert2009embedded}}).
 
+\emph{\cite{sommerville2011software}} states that it is practically impossible to perfectly replicate the system's working environment and when considering an embedded system, this can can be even harder. Buttons of the device have to be actually pressed and visual changes on the screen of the device has to be observed. In order to automate this, some sort of test environment has to be implemented that can observe and manipulate the device through physical word, i.e. not simulating the keystrokes nor reading the LCD communication line. Some kind of joint hardware and software solution has to be created and it also has to mimic real human user as realistically as possible.
 
-\section{Problem statement}
+This seminar work will discuss the theories related to software testing, testing of embedded systems and the problems stated above. Seminar work will present a proposed architecture for automated acceptance testing of payment terminals including the needed hardware and software.
 
-Undergraduate students studying technical subjects do not consider typography
-very interesting these days, and therefore the typographical quality of many
-theses is unacceptably low. 
-We plan to rectify this situation somewhat by providing a decent-quality
-example thesis outline for students.
-We expect that the typographical quality of the master's theses will
-dramatically increase as the new thesis outline is taken into use.
+Research presented in this seminar work was carried in co-operation with one of the main payment terminal software provider in the Nordic countries.
+
+\section{Problem statements}
+
+In order to survey the topic of this work in adequate level, this seminar work will discuss four different problem statements. problem statements are as follows:
+\begin{enumerate}
+\item What are the benefits of using open source software and how can the architecture be designed to maximally exploit these benefits?
+\item What are the distinguishing characteristics between different payment terminals that have impact on automated acceptance testing? How can the architecture be designed to adapt the system to different payment terminals with minimal effort?
+\item What kinds of test automation approaches exist and which approach is best suited for payment terminal acceptance test automation?
+\item How should test keywords used in test suites be defined to make
+the test suites compact and understandable? How should keywords be defined to make the tests reusable for other types of payment terminals?
+\end{enumerate}
 
 \section{Structure of the Thesis}
 \label{section:structure} 
 
-You should use transition in your text, meaning that you should help
-the reader follow the thesis outline. Here, you tell what will be in
-each chapter of your thesis. 
+This seminar work will first discuss the theories and literature related to the topic and will then present proposed architecture of automated test environment for payment terminal software acceptance testing. In the first chapter of this seminar work the topic will be introduced, problem statements will be presented and structure of this work will be explained.
+
+Second chapter will cover the literature review of the topic of this seminar work. Each problem statements will have related subsections and individual problem statements will be discussed on those sections. Each subsection will first give introduction on problem statement's point of view and it will be followed by the most relevant references around the topic. Subsections will point out what has been done earlier and how the fundamental aspects of these previous works can be used as a basis for this work.
+
+Third chapter of this seminar work will present the proposed architecture for automated acceptance test environment for payment terminal software based on literature review done on previous chapter. Chapter will present the fundamental parts of hardware and software needed for this kind of environment. This chapter will have diagrams of proposed software architecture as well as fundamental design of needed hardware.
+
+Fourth and the final chapter will conclude the research done on this seminar work and will summarize the benefits obtained by this kind of environment.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.5)  24 APR 2016 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.5)  5 MAY 2016 20:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1120,14 +1120,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/aalto-logo-en.pdf, id=103, 302.3837pt x 132.96776pt>
+<images/aalto-logo-en.pdf, id=83, 302.3837pt x 132.96776pt>
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-en.pdf>
 Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 439.
 (pdftex.def)             Requested size: 174.709pt x 76.82234pt.
  [2 <./images/aalto-logo-en.pdf>]
-<images/aalto-logo-fi.pdf, id=122, 284.79599pt x 133.24078pt>
+<images/aalto-logo-fi.pdf, id=102, 284.79599pt x 133.24078pt>
 File: images/aalto-logo-fi.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-fi.pdf>
@@ -1155,44 +1155,37 @@ Chapter 1.
 [1
 
 
-]) (./2Payment_terminal_acceptance_testing.tex [2]
+] [2]) (./2Payment_terminal_acceptance_testing.tex [3]
 Chapter 2.
 
 Overfull \hbox (26.44917pt too wide) in paragraph at lines 3--3
 |\OT1/cmr/bx/n/24.88 Payment ter-mi-nal ac-cep-tance test-
  []
 
-[3
 
-]
-Overfull \hbox (7.13577pt too wide) in paragraph at lines 58--58
+Overfull \hbox (7.13577pt too wide) in paragraph at lines 14--14
  |[]\OT1/cmr/bx/n/17.28 Common char-ac-ter-is-tics be-tween pay-ment
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 81.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
- [4] [5] [6])
-(./3Proposed_architecture.tex [7]
-Chapter 3.
-[8
+) (./3Proposed_architecture.tex [4
 
-] <images/indica_model.pdf, id=257, 261.97874pt x 88.33pt>
+]
+Chapter 3.
+<images/indica_model.pdf, id=186, 261.97874pt x 88.33pt>
 File: images/indica_model.pdf Graphic file (type pdf)
 
 <use images/indica_model.pdf>
-Package pdftex.def Info: images/indica_model.pdf used on input line 52.
+Package pdftex.def Info: images/indica_model.pdf used on input line 27.
 (pdftex.def)             Requested size: 390.0pt x 131.49863pt.
- <images/ihaa.jpg, id=259, 401.5pt x 293.4965pt>
+ <images/ihaa.jpg, id=188, 401.5pt x 293.4965pt>
 File: images/ihaa.jpg Graphic file (type jpg)
 
 <use images/ihaa.jpg>
-Package pdftex.def Info: images/ihaa.jpg used on input line 62.
+Package pdftex.def Info: images/ihaa.jpg used on input line 37.
 (pdftex.def)             Requested size: 256.0748pt x 187.20119pt.
- [9 <./images/indica_model.pdf>] (./images/page-merge.tex
+ [5
+
+] (./images/page-merge.tex
 \spexx=\skip63
 \spexy=\skip64
 Missing character: There is no ; in font nullfont!
@@ -1258,74 +1251,41 @@ Missing character: There is no ; in font nullfont!
 )
 \graphdotsize=\skip65
 \graphgridsize=\skip66
+
 (./images/obstruction-grouped.tex
 \oggs=\skip67
 ) (./images/general-star-graphs.tex))
-(./4methods.tex [10 <./images/ihaa.jpg>] [11]
+(./8conclusions.tex [6 <./images/indica_model.pdf>] [7 <./images/ihaa.jpg>]
+[8]
 Chapter 4.
-) (./5implementation.tex [12
+) (./thesis.bbl [9
 
-] [13]
-Chapter 5.
-) (./6evaluation.tex [14
-
-]
-Chapter 6.
-) (./7discussion.tex [15
-
-]
-Chapter 7.
-) (./8conclusions.tex [16
-
-]
-Chapter 8.
-) (./thesis.bbl [17
-
-]) (./appendices.tex [18
-
-]
-Appendix A.
-File: images/aalto-logo-en.pdf Graphic file (type pdf)
-<use images/aalto-logo-en.pdf>
-Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 13.
-(pdftex.def)             Requested size: 312.00119pt x 137.19974pt.
-File: images/aalto-logo-fi.pdf Graphic file (type pdf)
- <use images/aalto-logo-fi.pdf>
-Package pdftex.def Info: images/aalto-logo-fi.pdf used on input line 14.
-(pdftex.def)             Requested size: 312.00119pt x 145.97571pt.
-
-<images/aalto-logo-se.pdf, id=341, 315.62114pt x 132.96677pt>
-File: images/aalto-logo-se.pdf Graphic file (type pdf)
-
-<use images/aalto-logo-se.pdf>
-Package pdftex.def Info: images/aalto-logo-se.pdf used on input line 15.
-(pdftex.def)             Requested size: 312.00119pt x 131.45084pt.
-)
+])
 
 Package todo Warning: Nothing \todo! I'm ignoring the \todos command on input l
 ine 564.
 
 
 AED: lastpage setting LastPage
-[19
+[10
 
-] [20 <./images/aalto-logo-se.pdf>]
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 573.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 573.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 573.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 573.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1189BE9355731379F4717F55C0A1DC70;1339.
+(rerunfilecheck)             Checksum: 61E6192909CA7D3EFA46343F66413DAD;1099.
  ) 
 Here is how much of TeX's memory you used:
- 22063 strings out of 493089
- 432250 string characters out of 6134843
- 576705 words of memory out of 5000000
- 24970 multiletter control sequences out of 15000+600000
- 20737 words of font info for 79 fonts, out of 8000000 for 9000
+ 21975 strings out of 493089
+ 431014 string characters out of 6134843
+ 577635 words of memory out of 5000000
+ 24924 multiletter control sequences out of 15000+600000
+ 18692 words of font info for 70 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 55i,13n,73p,772b,1163s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,73p,881b,1163s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -1333,19 +1293,17 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (26 pages, 325418 bytes).
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on thesis.pdf (16 pages, 278159 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 363 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 309 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

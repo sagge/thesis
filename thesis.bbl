@@ -1,29 +1,14 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[{Aalto University Library}(2011{\natexlab{a}})]{bibinstructions}
-{Aalto University Library}.
-\newblock Making a bibliography.
-\newblock webpage, March 2 2011{\natexlab{a}}.
-\newblock
-  \url{http://otalib.aalto.fi/en/instructions/guides/citations/bibliography/}.
-  Accessed 4.2.2011.
-
-\bibitem[{Aalto University Library}(2011{\natexlab{b}})]{howfindinfo}
-{Aalto University Library}.
-\newblock webpage, March 2 2011{\natexlab{b}}.
-\newblock How to find - brief guide to finding publications and information.
-  Accessed 4.3.2011.
-
-\bibitem[Becker et~al.(1996)Becker, Gschwind, Ohler, Seeger, and
-  Widmayer]{becker:1996:mvbt}
-B.~Becker, S.~Gschwind, T.~Ohler, Bernhard Seeger, and Peter Widmayer.
-\newblock {An asymptotically optimal multiversion B-tree}.
-\newblock \emph{The VLDB Journal}, 5\penalty0 (4):\penalty0 264--275, 1996.
+\bibitem[Ebert and Jones(2009)]{ebert2009embedded}
+Christof Ebert and Capers Jones.
+\newblock Embedded software: Facts, figures, and future.
+\newblock \emph{Computer}, \penalty0 (4):\penalty0 42--52, 2009.
 
 \bibitem[Göös et~al.(2010)Göös, Haapasalo, and Moisio]{FerryProblem}
 Mika Göös, Tuukka Haapasalo, and Leo Moisio.
@@ -38,24 +23,25 @@ Tuukka Haapasalo.
   University School of Science and Technology, Espoo, Finland, 2010.
 \newblock \url{http://lib.tkk.fi/Diss/2010/isbn9789526033600/}.
 
-\bibitem[Haapasalo et~al.(2009)Haapasalo, Jaluta, Seeger, Sippu, and
-  Soisalon-Soininen]{haapasalo:2009:tmvbt}
-Tuukka Haapasalo, Ibrahim Jaluta, Bernhard Seeger, Seppo Sippu, and Eljas
-  Soisalon-Soininen.
-\newblock Transactions on the multiversion {B$^+$}-tree.
-\newblock In \emph{Proceedings of the 12th Conference in Extending Database
-  Technology}, pages 1064--1075, 2009.
+\bibitem[Haugset and Hanssen(2008)]{haugset2008automated}
+Borge Haugset and Geir~Kjetil Hanssen.
+\newblock Automated acceptance testing: A literature review and an industrial
+  case study.
+\newblock In \emph{Agile, 2008. AGILE'08. Conference}, pages 27--38. IEEE,
+  2008.
 
-\bibitem[Hupponen et~al.(2010)Hupponen, Karlsson, Laitinen, Ojala, Pirinen,
-  Seuranen, Takkinen, von Loesch, and Vestbø]{TeXlipse}
-Taavi Hupponen, Kimmo Karlsson, Jani Laitinen, Oskar Ojala, Antti Pirinen, Esa
-  Seuranen, Laura Takkinen, Boris von Loesch, and Tor~Arne Vestbø.
-\newblock {TeXlipse plugin for {E}clipse}, 2010.
-\newblock \url{http://texlipse.sourceforge.net/}. Accessed 25.2.2011.
+\bibitem[Myers et~al.(2011)Myers, Sandler, and Badgett]{myers2011art}
+G.J. Myers, C.~Sandler, and T.~Badgett.
+\newblock \emph{The Art of Software Testing}.
+\newblock ITPro collection. Wiley, 2011.
+\newblock ISBN 9781118133156.
+\newblock URL \url{https://books.google.fi/books?id=GjyEFPkMCwcC}.
 
-\bibitem[{The Eclipse Foundation}(2011)]{Eclipse}
-{The Eclipse Foundation}.
-\newblock {Eclipse}, 2011.
-\newblock \url{http://eclipse.org/}. Accessed 25.2.2011.
+\bibitem[Sommerville(2011)]{sommerville2011software}
+I.~Sommerville.
+\newblock \emph{Software Engineering}.
+\newblock International Computer Science Series. Pearson, 2011.
+\newblock ISBN 9780137053469.
+\newblock URL \url{https://books.google.fi/books?id=l0egcQAACAAJ}.
 
 \end{thebibliography}
