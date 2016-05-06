@@ -10,19 +10,6 @@ Christof Ebert and Capers Jones.
 \newblock Embedded software: Facts, figures, and future.
 \newblock \emph{Computer}, \penalty0 (4):\penalty0 42--52, 2009.
 
-\bibitem[Göös et~al.(2010)Göös, Haapasalo, and Moisio]{FerryProblem}
-Mika Göös, Tuukka Haapasalo, and Leo Moisio.
-\newblock Finding hard instances of the ferry problem.
-\newblock Course report for the course {T-79.5203/S-72.2420} {G}raph theory,
-  Aalto {SCI}, 2010.
-
-\bibitem[Haapasalo(2010)]{HaapasaloThesis}
-Tuukka Haapasalo.
-\newblock \emph{Accessing Multiversion Data in Database Transactions}.
-\newblock PhD thesis, Department of Computer Science and Engineering, Aalto
-  University School of Science and Technology, Espoo, Finland, 2010.
-\newblock \url{http://lib.tkk.fi/Diss/2010/isbn9789526033600/}.
-
 \bibitem[Haugset and Hanssen(2008)]{haugset2008automated}
 Borge Haugset and Geir~Kjetil Hanssen.
 \newblock Automated acceptance testing: A literature review and an industrial
@@ -30,12 +17,26 @@ Borge Haugset and Geir~Kjetil Hanssen.
 \newblock In \emph{Agile, 2008. AGILE'08. Conference}, pages 27--38. IEEE,
   2008.
 
+\bibitem[Khan and Khan(2012)]{khan2012comparative}
+Mohd~Ehmer Khan and Farmeena Khan.
+\newblock A comparative study of white box, black box and grey box testing
+  techniques.
+\newblock \emph{Int. J. Adv. Comput. Sci. Appl}, 3\penalty0 (6), 2012.
+
 \bibitem[Myers et~al.(2011)Myers, Sandler, and Badgett]{myers2011art}
 G.J. Myers, C.~Sandler, and T.~Badgett.
 \newblock \emph{The Art of Software Testing}.
 \newblock ITPro collection. Wiley, 2011.
 \newblock ISBN 9781118133156.
 \newblock URL \url{https://books.google.fi/books?id=GjyEFPkMCwcC}.
+
+\bibitem[Paulson et~al.(2004)Paulson, Succi, and
+  Eberlein]{paulson2004empirical}
+James~W Paulson, Giancarlo Succi, and Armin Eberlein.
+\newblock An empirical study of open-source and closed-source software
+  products.
+\newblock \emph{Software Engineering, IEEE Transactions on}, 30\penalty0
+  (4):\penalty0 246--256, 2004.
 
 \bibitem[Sommerville(2011)]{sommerville2011software}
 I.~Sommerville.
