@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,6 +22,13 @@ Mohd~Ehmer Khan and Farmeena Khan.
 \newblock A comparative study of white box, black box and grey box testing
   techniques.
 \newblock \emph{Int. J. Adv. Comput. Sci. Appl}, 3\penalty0 (6), 2012.
+
+\bibitem[Morgan and Finnegan(2007)]{morgan2007benefits}
+Lorraine Morgan and Patrick Finnegan.
+\newblock Benefits and drawbacks of open source software: an exploratory study
+  of secondary software firms.
+\newblock In \emph{Open Source Development, Adoption and Innovation}, pages
+  307--312. Springer, 2007.
 
 \bibitem[Myers et~al.(2011)Myers, Sandler, and Badgett]{myers2011art}
 G.J. Myers, C.~Sandler, and T.~Badgett.

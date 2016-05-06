@@ -13,9 +13,13 @@ Test environment that can be used in acceptance testing of payment terminals has
 
 \section{Benefits of Open Source solutions}
 
-\emph{\cite{paulson2004empirical}}
+When designing automated acceptance testing environment from scratch, evaluation and availability of different possible components play significant role in terms of development speed and costs. Software components might need some modification to suit the needs of intended environment and same applies also to the hardware parts.
 
+Open source software provides advantage on these matters over closed source products as the source code is easily available (\emph{\cite{morgan2007benefits}}). As open source software can be accessed free of charge, component can be easily evaluated by trying out whether they work for the purpose or not.
 
+According to \emph{\cite{paulson2004empirical}} open source projects usually have fewer defects than closed source projects. Defects are found and fixed rapidly as they are reported openly to the open source community.If defect is found during evaluation of the product, it can be also corrected by the user and by doing this the user can contribute to the project. This on the other hand is hardly never possible with closed software.
+
+\emph{\cite{paulson2004empirical}} also states that open source projects foster more creativity than closed source counterpart. This means that number of functions added over time is higher on open source projects. When using the product in some new field of use, this can be great advantage as user can report desired feature to the community and it can be added relatively quickly if feature is considered needed by the community.
 
 "Open source" hardware on the other hand means that details and plans of the product and parts are commonly available. This allows that parts can be manufactured and modified by anyone with knowledge and skills to suit individual needs. When detailed part descriptions are available multiple manufacturers can fabricate the parts. This creates competition and therefore usually lowers the price of individual hardware parts.
 
@@ -23,7 +27,7 @@ Test environment that can be used in acceptance testing of payment terminals has
 
 When designing automated test environment for different kinds of payment terminals, different physical and technical features have to be taken into account. Environment has to be able to manipulate different types of payment terminals and test structure has to be designed to adapt to needs of different software and software versions running on payment terminals.
 
-Almost all payment terminals share some common characteristics as they are made for same purpose: handling card payments. Scope of this thesis is to view those payment terminals that share three main features: keyboard, screen and card slot. Different types of terminals can be observed in Figure~\ref{fig:terminals} and Figure~\ref{fig:izettle} bellow.
+Majority of payment terminals share some common characteristics as they are made for same purpose: handling card payments. Scope of this thesis is to view those payment terminals that share three main features: keyboard, screen and card slot. Different types of terminals can be observed in Figure~\ref{fig:terminals} and Figure~\ref{fig:izettle} bellow.
 
 Screens of the payment terminals differ in terms of size, placement and type. Test environment has to take into account different screen placements and it has to support both black and white (BW) and colored displays.
 
@@ -31,13 +35,9 @@ Keyboards of payment terminals share majority of keys together as number keys ar
 
 Location of the chip card slot is usually on the lover edge of the payment terminal or on top of the screen of the payment terminal. Research done within this thesis is limited to those terminals that have the chip card slot at the lower edge of the payment terminal as this simplifies the hardware needed for test environment. This is described more in depth in Chapter~\ref{section:Proposed hardware}. This study is also limited to only chip card readers and magnetic stripe readers or near field communication (NFC) payments are not addressed.
 
-
-
-
-
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=9cm]{images/terminal1.png}
+    \includegraphics[width=8cm]{images/terminal1.png}
     \caption{Two examples of payment terminals from different manufacturers. Left image from: \url{http://www.netskauppa.fi/images/t/24-85-PrimaryImage.image.ashx}}
     \label{fig:terminals}
   \end{center}
@@ -45,7 +45,7 @@ Location of the chip card slot is usually on the lover edge of the payment termi
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=8cm]{images/izettle.png}
+    \includegraphics[width=7cm]{images/izettle.png}
     \caption{Example of a payment terminal which attaches to a smart phone.}
     \label{fig:izettle}
   \end{center}
@@ -53,11 +53,19 @@ Location of the chip card slot is usually on the lover edge of the payment termi
 
 \section{Different approaches for test automation}
 
-\emph{\cite{khan2012comparative}}
+Problem of testing the payment terminal software in automated way can be viewed at different levels. Most abstract division can be seen if the testing is divided into two levels: white box testing and black box testing. White box testing is a method where source code is investigated and test cases are written to test the internal logic of the program. Black box testing on the other hand concentrates only on the inputs and the outputs of the software. Everything between those is not in a field of interest and black box testing only focuses on whether the right input produces the wanted output. (\emph{\cite{myers2011art}})
 
+\emph{\cite{khan2012comparative}} distinguishes these methods from one another clearly by stating that white box testing is a process where full knowledge of source code is needed in order to write the tests. Black box testing is described in a way that only fundamental aspects of the application has to be known and black box testing has no or only little relevance to internal works of the program.
+
+In this way white box testing can be seen to cover unit and integration testing part of the software testing and the black box testing can be seen covering the acceptance testing part of the testing.
+
+As black box testing is based only to the external exceptions and behavior of the software (\emph{\cite{khan2012comparative}}), acceptance testing of payment terminal software can be seen to follow this methodology.
+
+Therefore acceptance testing of a payment terminal software can be seen as a testing phase where the UI of the device and use cases of the device are tested at the final production level, i.e. through using the real buttons of the device under test and observing that the expected messages can be seen through the screen of the device under test.
 
 \section{Test suite syntax}
 
+Test suite syntax plays 
 
 \begin{figure}[ht]
   \begin{center}
