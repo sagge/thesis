@@ -265,11 +265,9 @@
 % variants you use (they are all there in the same place). 
 % ------------------------------------------------------------------
 \newcommand{\TITLE}{An open and general CNC and machine vision based architecture for payment terminal acceptance test automation}
-\newcommand{\FTITLE}{Ohjelmistoprosessit mänteille}
-\newcommand{\STITLE}{Den stora stygga vargen}
-\newcommand{\DATE}{May 13, 2016}
-\newcommand{\FDATE}{13. toukokuuta 2016}
-\newcommand{\SDATE}{Den 18 Juni 2011}
+\newcommand{\FTITLE}{Avoin ja yleispätevä CNC- ja konenäköteknologioihin pohjautuva maksupäätteiden automaattisen hyväksymistestausympäristön arkkitehtuuri}
+\newcommand{\DATE}{May 6, 2016}
+\newcommand{\FDATE}{6. toukokuuta 2016}
 
 % Supervisors and instructors
 % ------------------------------------------------------------------
@@ -285,12 +283,10 @@
 % Example of twosupervisors:
 \newcommand{\SUPERVISOR}{D.Sc. Seppo Sierla}
 \newcommand{\FSUPERVISOR}{D.Sc. Seppo Sierla}
-\newcommand{\SSUPERVISOR}{Professor Antti Ylä-Jääski}
 
 % If you have only one instructor, just write one name here
 \newcommand{\INSTRUCTOR}{Tatu Kairi M.Sc.}
 \newcommand{\FINSTRUCTOR}{Filosofian maisteri Tatu Kairi}
-\newcommand{\SINSTRUCTOR}{Diplomingenjör Olli Ohjaaja}
 % If you have two instructors, separate them with \\ to create linefeeds
 % \newcommand{\INSTRUCTOR}{Olli Ohjaaja M.Sc. (Tech.)\\
 %  Elli Opas M.Sc. (Tech)}
@@ -314,18 +310,13 @@
 % ------------------------------------------------------------------
 \newcommand{\PROFESSORSHIP}{Intelligent Products}
 \newcommand{\FPROFESSORSHIP}{Älykkäät tuotteet}
-\newcommand{\SPROFESSORSHIP}{Datakommunikationsprogram}
 % Professorship code is the same in all languages
 \newcommand{\PROFCODE}{T-110}
-\newcommand{\KEYWORDS}{ocean, sea, marine, ocean mammal, marine mammal, whales,
-cetaceans, dolphins, porpoises}
-\newcommand{\FKEYWORDS}{AEL, aineistot, aitta, akustiikka, Alankomaat,
-aluerakentaminen, Anttolanhovi, Arcada, ArchiCad, arkki}
-\newcommand{\SKEYWORDS}{omsättning, kassaflöde, värdepappersmarknadslagen,
-yrkesutövare, intresseföretag, verifieringskedja}
+\newcommand{\KEYWORDS}{automated acceptance testing, software testing, payment terminal, robot framework, computer vision, open source}
+\newcommand{\FKEYWORDS}{automaattinen hyväksymistestaus, ohjelmistotestaus, maksupääte, robot framework, konenäkö, avoin lähdekoodi}
 \newcommand{\LANGUAGE}{English}
 \newcommand{\FLANGUAGE}{Englanti}
-\newcommand{\SLANGUAGE}{Engelska}
+
 
 % Author is the same for all languages
 \newcommand{\AUTHOR}{Sakari A. Pesonen}
@@ -339,7 +330,7 @@ yrkesutövare, intresseföretag, verifieringskedja}
 % Set the PDF keywords
 \hypersetup{pdfkeywords={\KEYWORDS}}
 % Set the PDF subject
-\hypersetup{pdfsubject={Master's Thesis}}
+\hypersetup{pdfsubject={Seminar Report}}
 
 % TODO command formatting
 \renewcommand\todoformat{\small\ttfamily\color{orange}}
@@ -416,48 +407,23 @@ yrkesutövare, intresseföretag, verifieringskedja}
 % Abstract in English
 % ------------------------------------------------------------------
 \thesisabstract{english}{
-A dissertation or thesis is a document submitted in support of candidature
-for a degree or professional qualification presenting the author's research and
-findings. In some countries/universities, the word thesis or a cognate is used
-as part of a bachelor's or master's course, while dissertation is normally
-applied to a doctorate, whilst, in others, the reverse is true.
+Software testing is a crucial part of modern software development and it is commonly accepted fact that the earlier defects and errors in the software are found, the lower the cost of correcting those will be. Early detection of errors also increases the possibility to correct them properly. (\emph{\cite{myers2011art}})
 
-\fixme{Abstract text goes here (and this is an example how to use fixme).} 
-Fixme is a command that helps you identify parts of your thesis that still
-require some work. When compiled in the custom \texttt{mydraft} mode, text
-parts tagged with fixmes are shown in bold and with fixme tags around them. When
-compiled in normal mode, the fixme-tagged text is shown normally (without
-special formatting). The draft mode also causes the ``Draft'' text to appear on
-the front page, alongside with the document compilation date. The custom
-\texttt{mydraft} mode is selected by the \texttt{mydraft} option given for the
-package \texttt{aalto-thesis}, near the top of the \texttt{thesis-example.tex}
-file.
+Acceptance testing is a process of comparing the developed program to to the initial requirements (\emph{\cite{myers2011art}}). According to \emph{\cite{sommerville2011software}} acceptance testing of a system should be executed in an environment as similar as possible to the production environment. This seminar report will discuss how to address these guidelines in automated acceptance testing environment of payment terminal software.
 
-The thesis example file (\texttt{thesis-example.tex}), all the chapter content
-files (\texttt{1introduction.tex} and so on), and the Aalto style file
-(\texttt{aalto-thesis.sty}) are commented with explanations on how the Aalto
-thesis works. The files also contain some examples on how to customize various
-details of the thesis layout, and of course the example text works as an
-example in itself.}
+This seminar work will discuss the theories related to software testing, testing of embedded systems and the challenges stated above. Seminar report will present a proposed architecture for automated acceptance testing of payment terminals including the needed hardware and software.
+
+}
 
 % Abstract in Finnish
 % ------------------------------------------------------------------
 \thesisabstract{finnish}{
-Kivi on materiaali, joka muodostuu mineraaleista ja luokitellaan
-mineraalisisältönsä mukaan. Kivet luokitellaan yleensä ne muodostaneiden
-prosessien mukaan magmakiviin, sedimenttikiviin ja metamorfisiin kiviin.
-Magmakivet ovat muodostuneet kiteytyneestä magmasta, sedimenttikivet vanhempien
-kivilajien rapautuessa ja muodostaessa iskostuneita yhdisteitä, metamorfiset
-kivet taas kun magma- ja sedimenttikivet joutuvat syvällä maan kuoressa
-lämpötilan ja kovan paineen alaiseksi.
+Ohjelmistotestaus on tärkeä osa modernissa ohjelmistotuotannossa ja on yleisesti hyväksytty, että mitä aiemmin virheet ohjelmistosta löytyvät, sitä edullisempaa niiden korjaus tulee olemaan. Aikainen virheiden havaitseminen myös nostaa mahdollisuutta korjata virheet oikein. (\emph{\cite{myers2011art}})
 
-Kivi on epäorgaaninen eli elottoman luonnon aine, mikä tarkoittaa ettei se
-sisällä hiiltä tai muita elollisen orgaanisen luonnon aineita. Niinpä kivestä
-tehdyt esineet säilyvät maaperässä tuhansien vuosien ajan mätänemättä. Kun
-orgaaninen materiaali jättää jälkensä kiveen, tulos tunnetaan nimellä fossiili.
+Hyväksymistestaus on ohjelmistotestauksen vaihe, jossa kehitettyä ohjelmistoa verrataan alkuperäisiin ohjelmistovaatimuksiin (\emph{\cite{myers2011art}}). Ohjelmiston hyväksymistestaus tulisi suorittaa lopullista tuotantoympäristöä mahdollissimman hyvin vastaavassa ympäristössä (\emph{\cite{sommerville2011software}}). Tämä seminaarityö käsittelee näitä ohjeistuistuksia maksupäätteiden autommaattisen hyväksymistestauksen ympäristössä.
 
-Suomen peruskallio on suurimmaksi osaksi graniittia, gneissiä ja
-Kaakkois-Suomessa rapakiveä}
+Tämä seminaarityö käsittelee ohjelmistotestaukseen liittyvää teoriaa, sulautettujen järjestelmien testausta ja yllä mainittuja haasteita. Seminaarityö esittelee ehdotetun ympäristön maksupäätteiden automaattiseen hyväksymistestaukseen ja käsittelee siihen tarvittuja ohjelmistoja ja fyysisiä komponentteja.
+}
 
 
 
@@ -472,11 +438,10 @@ Kaakkois-Suomessa rapakiveä}
 
 % The star means that the chapter isn't numbered and does not 
 % show up in the TOC
+
 \chapter*{Acknowledgements}
 
-I wish to thank my instructor Tatu Kairi and my supervisor Seppo Sierla 
-for their great help and knowledge throughout the writing process of this
-thesis.
+I wish to thank my instructor Tatu Kairi and my supervisor Seppo Sierla for their great help and knowledge throughout the writing process of this seminar report.
 \vskip 10mm
 
 \noindent Espoo, \DATE

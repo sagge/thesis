@@ -5,15 +5,15 @@
 
 Software testing is a crucial part of modern software development and it is commonly accepted fact that the earlier defects and errors in the software are found, the lower the cost of correcting those will be. Early detection of errors also increases the possibility to correct them properly. (\emph{\cite{myers2011art}})
 
-Acceptance testing is a process of comparing the developed program to to the initial requirements (\emph{\cite{myers2011art}}). Therefore especially in agile software development, automated acceptance testing (AAT) plays important role as new versions of software are being developed constantly and AAT phase should be executed whenever new features are added. Automation can free valuable human resources from the process (\emph{\cite{haugset2008automated}}) and therefore lover the overall cost of the software.
+Acceptance testing is a process of comparing the developed program to to the initial requirements (\emph{\cite{myers2011art}}). Therefore especially in agile software development, automated acceptance testing (AAT) plays important role as new versions of software are being developed constantly and AAT phase should be executed whenever new features are added. Automation can free valuable human resources from this process (\emph{\cite{haugset2008automated}}) and therefore lover the overall cost of the software.
 
-According to \emph{\cite{sommerville2011software}} acceptance testing of a system should be executed at the final production environment, or at least at environment similar to the production environment. System should also be tested with real data rather than with simulated data. When the software being developed is actually embedded software and the production environment is actually real embedded system, in this case payment terminal, the acceptance testing should be executed on actual payment terminal with actually interacting through the user interface (UI) of the machine. This also leads to a situation where concerns pointed out above are actually being emphasized as late detection of defects in embedded software can considerably raise the overall cost of the system (\emph{\cite{ebert2009embedded}}).
+According to \emph{\cite{sommerville2011software}} acceptance testing of a system should be executed in an environment as similar as possible to the production environment of the final product. System should also be tested with real data rather than with simulated sample. When the software being developed is actually embedded software and the production environment is actually real embedded system, in this case a payment terminal, the acceptance testing should be executed on actual payment terminal with actually interacting through the user interface (UI) of the machine. This also leads to a situation where concerns pointed out above are actually being emphasized as late detection of defects in embedded software can considerably raise the overall cost of the system (\emph{\cite{ebert2009embedded}}).
 
 \emph{\cite{sommerville2011software}} states that it is practically impossible to perfectly replicate the system's working environment and when considering an embedded system, this can can be even harder. Buttons of the device have to be actually pressed and visual changes on the screen of the device has to be observed. In order to automate this, some sort of test environment has to be implemented that can observe and manipulate the device through physical word, i.e. not simulating the keystrokes nor reading the LCD communication line. Some kind of joint hardware and software solution has to be created and it also has to mimic real human user as realistically as possible.
 
-This seminar work will discuss the theories related to software testing, testing of embedded systems and the problems stated above. Seminar work will present a proposed architecture for automated acceptance testing of payment terminals including the needed hardware and software.
+This seminar work will discuss the theories related to software testing, testing of embedded systems and the problems stated above. Seminar report will present a proposed architecture for automated acceptance testing of payment terminal software including the needed hardware and software.
 
-Research presented in this seminar work was carried in co-operation with Eficode Oy and one of the main payment terminal software provider in the Nordic countries.
+Research presented in this seminar report was carried in co-operation with Eficode Oy and one of the main payment terminal software provider in the Nordic countries.
 
 \section{Problem statements}
 
@@ -26,14 +26,14 @@ In order to survey the topic of this work in adequate level, this seminar work w
 the test suites compact and understandable? How should keywords be defined to make the tests reusable for other types of payment terminals?
 \end{enumerate}
 
-\section{Structure of the Thesis}
+\section{Structure of the seminar report}
 \label{section:structure} 
 
-This seminar work will first discuss the theories and literature related to the topic and will then present proposed architecture of automated test environment for payment terminal software acceptance testing. In the first chapter of this seminar work the topic will be introduced, problem statements will be presented and structure of this work will be explained.
+This seminar report will first discuss the theories and literature related to the topic and will then present a proposed architecture of automated test environment for payment terminal software acceptance testing. In the first chapter of this seminar report the topic will be introduced, problem statements will be presented and structure of this work will be explained.
 
-Second chapter will cover the literature review of the topic of this seminar work. Each problem statements will have related subsections and individual problem statements will be discussed on those sections. Each subsection will first give introduction on problem statement's point of view and it will be followed by the most relevant references around the topic. Subsections will point out what has been done earlier and how the fundamental aspects of these previous works can be used as a basis for this work.
+Second chapter will cover the literature review of the topic of this seminar report. Each problem statements will have related subsections and individual problem statements will be discussed on those sections. Each subsection will first give introduction on problem statement's point of view and it will be followed by the most relevant references around the topic. Subsections will point out what has been done earlier and how the fundamental aspects of these previous works can be used as a basis for this work.
 
-Third chapter of this seminar work will present the proposed architecture for automated acceptance test environment for payment terminal software based on literature review done on previous chapter. Chapter will present the fundamental parts of hardware and software needed for this kind of environment. This chapter will have diagrams of proposed software architecture as well as fundamental design of needed hardware.
+Third chapter of this seminar report will present the proposed architecture for automated acceptance test environment for payment terminal software based on literature review done on previous chapter. Chapter will present the fundamental parts of hardware and software needed for this kind of environment. This chapter will have diagrams of proposed software architecture as well as fundamental design of needed hardware.
 
 Fourth and the final chapter will conclude the research done on this seminar work and will summarize the benefits obtained by this kind of environment.
 

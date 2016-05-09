@@ -4,45 +4,45 @@ The top-level auxiliary file: thesis.aux
 The style file: plainnat.bst
 Database file #1: sources.bib
 Warning--there's a number but no volume in ebert2009embedded
-You've used 7 entries,
+You've used 10 entries,
             2773 wiz_defined-function locations,
-            641 strings with 6047 characters,
-and the built_in function-call counts, 3263 in all, are:
-= -- 310
-> -- 154
-< -- 7
-+ -- 52
-- -- 45
-* -- 240
-:= -- 496
-add.period$ -- 29
-call.type$ -- 7
-change.case$ -- 34
-chr.to.int$ -- 7
-cite$ -- 15
-duplicate$ -- 164
-empty$ -- 279
-format.name$ -- 60
-if$ -- 705
+            657 strings with 6627 characters,
+and the built_in function-call counts, 4535 in all, are:
+= -- 428
+> -- 206
+< -- 11
++ -- 70
+- -- 60
+* -- 313
+:= -- 676
+add.period$ -- 39
+call.type$ -- 10
+change.case$ -- 48
+chr.to.int$ -- 10
+cite$ -- 21
+duplicate$ -- 235
+empty$ -- 404
+format.name$ -- 82
+if$ -- 992
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 9
-newline$ -- 47
-num.names$ -- 28
-pop$ -- 72
+missing$ -- 11
+newline$ -- 62
+num.names$ -- 40
+pop$ -- 112
 preamble$ -- 1
-purify$ -- 29
+purify$ -- 40
 quote$ -- 0
-skip$ -- 124
+skip$ -- 180
 stack$ -- 0
-substring$ -- 114
-swap$ -- 24
-text.length$ -- 2
+substring$ -- 152
+swap$ -- 37
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 67
+type$ -- 100
 warning$ -- 1
-while$ -- 31
+while$ -- 43
 width$ -- 0
-write$ -- 108
+write$ -- 146
 (There was 1 warning)
