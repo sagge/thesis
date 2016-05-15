@@ -7,7 +7,7 @@
 \contentsline {chapter}{Abbreviations and Acronyms}{v}{chapter*.1}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Problem statements}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Structure of the seminar report}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}Structure of the master's thesis}{2}{section.1.2}
 \contentsline {chapter}{\numberline {2}Payment terminal acceptance testing}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Benefits of Open Source solutions}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Common characteristics between payment terminals}{5}{section.2.2}
@@ -21,5 +21,11 @@
 \contentsline {section}{\numberline {3.3}Software}{12}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Test Framework}{13}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Test Libraries}{14}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Conclusions}{16}{chapter.4}
-\contentsline {chapter}{Bibliography}{17}{chapter*.4}
+\contentsline {chapter}{\numberline {4}Results and Evaluation}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hardware arrangements}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Software arrangements}{16}{section.4.2}
+\contentsline {section}{\numberline {4.3}Results}{16}{section.4.3}
+\contentsline {section}{\numberline {4.4}Evaluation}{16}{section.4.4}
+\contentsline {chapter}{\numberline {5}Discussion}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{18}{chapter.6}
+\contentsline {chapter}{Bibliography}{19}{chapter*.4}

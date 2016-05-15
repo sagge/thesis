@@ -320,7 +320,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT images/aalto-logo-fi.pdf
 INPUT ./images/aalto-logo-fi.pdf
 INPUT ./images/aalto-logo-fi.pdf
@@ -332,6 +331,7 @@ INPUT thesis.toc
 OUTPUT thesis.toc
 INPUT 1introduction.tex
 INPUT 1introduction.tex
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmsl12.tfm
 INPUT 2Payment_terminal_acceptance_testing.tex
@@ -363,8 +363,12 @@ INPUT ./images/architecture-big.png
 INPUT images/example_test.png
 INPUT ./images/example_test.png
 INPUT ./images/example_test.png
-INPUT 8conclusions.tex
-INPUT 8conclusions.tex
+INPUT 4Results_and_evaluation.tex
+INPUT 4Results_and_evaluation.tex
+INPUT 5discussion.tex
+INPUT 5discussion.tex
+INPUT 6conclusions.tex
+INPUT 6conclusions.tex
 INPUT thesis.bbl
 INPUT thesis.bbl
 INPUT thesis.aux
