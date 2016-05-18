@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex thesis"] 1463323505 "thesis.aux" "thesis.bbl" "thesis" 1463323748
+["bibtex thesis"] 1463323505 "thesis.aux" "thesis.bbl" "thesis" 1463603613
   "/usr/local/texlive/2015/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "sources.bib" 1462561091 8485 9b558e5829ce4c4329a0cf046b85f632 ""
-  "thesis.aux" 1463323748 8821 f56a4dee54595e2a05fc8713479b35f4 ""
+  "thesis.aux" 1463603613 8821 f56a4dee54595e2a05fc8713479b35f4 ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
   "thesis.blg"
   "thesis.bbl"
-["pdflatex"] 1463323746 "thesis.tex" "thesis.pdf" "thesis" 1463323748
+["pdflatex"] 1463603611 "thesis.tex" "thesis.pdf" "thesis" 1463603613
   "./images/aalto-logo-en.png" 1463322737 92264 e2612c759af10e5dd083fcf3c85c632d ""
   "./images/aalto-logo-fi.png" 1463322750 79984 bb456e339b0c591100eab9da8f3c4788 ""
   "./images/architecture-big.png" 1462558699 26418 ef78bd52a4cec03f6ea945145a4cc2ac ""
@@ -16,7 +16,7 @@
   "./images/robot_example.png" 1462535499 64750 17a4f695e5101cd5f2bfca343e067f59 ""
   "./images/signature.png" 1463323355 12215 fd3ed26fb1a347e97b593d3d71c1a9d6 ""
   "./images/terminal1.png" 1462528922 396264 7d563b0e51e5d74030704438ddce4075 ""
-  "./thesis.out" 1463323748 1765 8085ef022c01c6f03bf47ac71e7305d1 ""
+  "./thesis.out" 1463603613 1765 8085ef022c01c6f03bf47ac71e7305d1 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -212,7 +212,7 @@
   "1introduction.tex" 1463321836 5402 78942485eecb7d854420b3d74ed00a39 ""
   "2Payment_terminal_acceptance_testing.tex" 1463321931 10267 f40eeaa4f0aa05310cef9f37d293c9c6 ""
   "3Proposed_architecture.tex" 1463321881 9904 1810f8319a155e8c95b1af5e589a76c0 ""
-  "4Results_and_evaluation.tex" 1463321454 1308 51583fe43a6006b050b78e522e7438f4 ""
+  "4Results_and_evaluation.tex" 1463603611 1306 519392e6d7b798e4c469e2e5133ec950 ""
   "5discussion.tex" 1454670530 390 6b1319dacb12192945c9571e49af198c ""
   "6conclusions.tex" 1462569781 858 b6adfaf2c67853f8e5b0d3234685f217 ""
   "aalto-thesis.sty" 1463322913 13618 b5ced4ea0ebf2115568a2e82d815b86b ""
@@ -226,14 +226,14 @@
   "images/signature.png" 1463323355 12215 fd3ed26fb1a347e97b593d3d71c1a9d6 ""
   "images/terminal1.png" 1462528922 396264 7d563b0e51e5d74030704438ddce4075 ""
   "placeins.sty" 1113858000 4087 636308456f60d2b31cbf97867db5708d ""
-  "thesis.aux" 1463323748 8821 f56a4dee54595e2a05fc8713479b35f4 ""
+  "thesis.aux" 1463603613 8821 f56a4dee54595e2a05fc8713479b35f4 ""
   "thesis.bbl" 1463323505 3035 b1af5e03cbcf4cdb3fb402dce5f201b0 "bibtex thesis"
-  "thesis.out" 1463323748 1765 8085ef022c01c6f03bf47ac71e7305d1 ""
+  "thesis.out" 1463603613 1765 8085ef022c01c6f03bf47ac71e7305d1 ""
   "thesis.tex" 1463323746 25019 a63379e67919220e90fcd9cf0566fe9a ""
-  "thesis.toc" 1463323748 2101 2390364b38764083eef8bc92e1e920b0 ""
+  "thesis.toc" 1463603613 2101 2390364b38764083eef8bc92e1e920b0 ""
   (generated)
-  "thesis.log"
-  "thesis.out"
   "thesis.aux"
   "thesis.pdf"
   "thesis.toc"
+  "thesis.out"
+  "thesis.log"
