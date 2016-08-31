@@ -1,9 +1,14 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bach(1996)]{snakeoil}
+James Bach.
+\newblock Test automation snake oil.
+\newblock \emph{Windows Tech Journal}, 10, 1996.
 
 \bibitem[Ebert and Jones(2009)]{ebert2009embedded}
 Christof Ebert and Capers Jones.
@@ -36,6 +41,13 @@ Lorraine Morgan and Patrick Finnegan.
 \newblock In \emph{Open Source Development, Adoption and Innovation}, pages
   307--312. Springer, 2007.
 
+\bibitem[Mosley and Posey(2002)]{just_enough}
+D.J. Mosley and B.A. Posey.
+\newblock \emph{Just Enough Software Test Automation}.
+\newblock Just enough series. Prentice Hall PTR, 2002.
+\newblock ISBN 9780130084682.
+\newblock URL \url{https://books.google.com/books?id=PEBvfWESIt4C}.
+
 \bibitem[Myers et~al.(2011)Myers, Sandler, and Badgett]{myers2011art}
 G.J. Myers, C.~Sandler, and T.~Badgett.
 \newblock \emph{The Art of Software Testing}.
@@ -57,6 +69,13 @@ James~W Paulson, Giancarlo Succi, and Armin Eberlein.
   products.
 \newblock \emph{Software Engineering, IEEE Transactions on}, 30\penalty0
   (4):\penalty0 246--256, 2004.
+
+\bibitem[Pressman(2005)]{pressman2005software}
+R.S. Pressman.
+\newblock \emph{Software Engineering: A Practitioner's Approach}.
+\newblock McGraw-Hill higher education. Boston, 2005.
+\newblock ISBN 9780073019338.
+\newblock URL \url{https://books.google.com/books?id=bL7QZHtWvaUC}.
 
 \bibitem[Sommerville(2011)]{sommerville2011software}
 I.~Sommerville.
