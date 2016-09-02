@@ -76,7 +76,29 @@ When evaluating suitable test automation framework, it should be recognized, tha
 
 Test cases of a payment terminal software acceptance testing contain relatively high amount of repetition as for example test step of inserting PIN code is the same whether right or wrong PIN code is inserted or whether the test case would validate credit or debit payment. For this reason, test case syntax should be as modular as possible in order to allow reuse of keywords with different parameters. Easily reusable keywords also allows fast creation of new test cases.
 
-Robot Framework (RF) is an example of this kind of generic keyword driven test automation framework. RF allows creation of human readable test cases and reusability and extendability of high-level keywords is made relatively easy (\emph{\cite{stresnjak2011usage}}).
+Tests can be essentially written in some conventional coding language, for example Java or Python, or by using some higher level language. There are many widely used test frameworks available for conventional coding languages, for example jUnit for Java. This, however, requires coding experience to some extend to be able to understand and write the tests or modify the existing ones. As it is stated above, combined with the guideline for writing tests understandable enough, usage of conventional coding languages can be seen opposing the best practices. \todo{jUnit esimerkki ja selitystä}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=13cm]{images/junit_example.png}
+    \caption{Example of a jUnit test case that tries to login to website.}
+    \label{fig:robot_example}
+  \end{center}
+\end{figure}
+\FloatBarrier
+
+In addition to test frameworks mentioned earlier, there are also couple of well recognized tests frameworks available that utilize usage of more human-like language for writing the tests. These frameworks usually use the same libraries for interacting with the system under test (SUT) as more low level frameworks but they allow more high level syntax of the actual test scripts. One fairly popular example of this kind of more high level test framework is Cucumber. \todo{Cucumber testiesimerkki ja selitystä}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=8cm]{images/cucumber_example.png}
+    \caption{Example of a simple Cucumber test scenario.}
+    \label{fig:robot_example}
+  \end{center}
+\end{figure}
+\FloatBarrier
+
+Another good example of higher level test frameworks is Robot Framework (RF). RF is an example of generic keyword driven test automation framework. RF allows creation of human readable test cases and reusability and extendability of high-level keywords is made relatively easy (\emph{\cite{stresnjak2011usage}}). \emph{\cite{Rfuserguide}} also outlines that RF has highly modular software architecture allowing it to be easily connected to any kind of SUT by using different test libraries.
 
 Example of a Robot Framework test case can be seen in Figure~\ref{fig:robot_example} bellow. It is easy to see the intended test case execution by looking the test case and this will be the goal for the environment proposed later on in this master's thesis.
 
@@ -87,3 +109,4 @@ Example of a Robot Framework test case can be seen in Figure~\ref{fig:robot_exam
     \label{fig:robot_example}
   \end{center}
 \end{figure}
+\FloatBarrier
