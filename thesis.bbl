@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,10 +10,19 @@ James Bach.
 \newblock Test automation snake oil.
 \newblock \emph{Windows Tech Journal}, 10, 1996.
 
+\bibitem[Cucumber()]{cucumber}
+Cucumber.
+\newblock URL \url{https://cucumber.io/} Accessed 7.9.2016.
+
 \bibitem[Ebert and Jones(2009)]{ebert2009embedded}
 Christof Ebert and Capers Jones.
 \newblock Embedded software: Facts, figures, and future.
 \newblock \emph{Computer}, \penalty0 (4):\penalty0 42--52, 2009.
+
+\bibitem[Gherkin()]{gherkin}
+Gherkin.
+\newblock URL \url{https://github.com/cucumber/cucumber/wiki/Gherkin} Accessed
+  7.9.2016.
 
 \bibitem[Haugset and Hanssen(2008)]{haugset2008automated}
 Borge Haugset and Geir~Kjetil Hanssen.
@@ -21,6 +30,10 @@ Borge Haugset and Geir~Kjetil Hanssen.
   case study.
 \newblock In \emph{Agile, 2008. AGILE'08. Conference}, pages 27--38. IEEE,
   2008.
+
+\bibitem[JUnit()]{junit}
+JUnit.
+\newblock URL \url{http://junit.org/} Accessed 7.9.2016.
 
 \bibitem[Khan and Khan(2012)]{khan2012comparative}
 Mohd~Ehmer Khan and Farmeena Khan.
@@ -76,6 +89,10 @@ R.S. Pressman.
 \newblock McGraw-Hill higher education. Boston, 2005.
 \newblock ISBN 9780073019338.
 \newblock URL \url{https://books.google.com/books?id=bL7QZHtWvaUC}.
+
+\bibitem[{Robot Framework}()]{robotframework}
+{Robot Framework}.
+\newblock URL \url{http://robotframework.org/} Accessed 1.6.2016.
 
 \bibitem[Sommerville(2011)]{sommerville2011software}
 I.~Sommerville.

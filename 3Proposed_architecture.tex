@@ -85,7 +85,7 @@ Example of intended test case can be seen in Figure~\ref{fig:invalid_pin_test}. 
 \subsection{Test Libraries}
 \label{subsection:test libraries}
 
-As can be seen on Figure~\ref{fig:modular_architecture}, architecture requires external libraries to connect to the system under test. In this case those libraries would be a library for machine control, a library for computer vision and a library for card feeder manipulation. All these libraries can be written using Python programming language that is supported out of the box by Robot Framework.
+As can be seen on Figure~\ref{fig:modular_architecture}, architecture requires external libraries to connect to the system under test. In this case those libraries would be a library for machine control, a library for computer vision and a library for card feeder manipulation. All these libraries can be written using Python programming language that is supported out of the box by Robot Framework (\emph{\cite{robotframework}}).
 
 For machine control library the environment has to be able to send G-code command through USB serial communication to Arduino on the robot. For this pySerial\footnote{\url{http://pythonhosted.org/pyserial/}} library is proposed.
 
