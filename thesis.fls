@@ -380,6 +380,9 @@ INPUT ./images/robot.jpg
 INPUT images/pushing_tool.png
 INPUT ./images/pushing_tool.png
 INPUT ./images/pushing_tool.png
+INPUT images/electronics.png
+INPUT ./images/electronics.png
+INPUT ./images/electronics.png
 INPUT images/camera.jpg
 INPUT ./images/camera.jpg
 INPUT ./images/camera.jpg

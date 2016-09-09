@@ -1,9 +1,14 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[2()]{shapeoko}
+ShapeOko 2.
+\newblock URL \url{http://www.shapeoko.com/wiki/index.php/ShapeOko_2} Accessed
+  1.6.2016.
 
 \bibitem[Bach(1996)]{snakeoil}
 James Bach.
@@ -30,6 +35,35 @@ Borge Haugset and Geir~Kjetil Hanssen.
   case study.
 \newblock In \emph{Agile, 2008. AGILE'08. Conference}, pages 27--38. IEEE,
   2008.
+
+\bibitem[{Image source 1}()]{image1}
+{Image source 1}.
+\newblock URL
+  \url{http://bitsnapper.com/wp-content/uploads/2015/09/Raspberry-Pi-2-Model-B-1GB-System-on-chip-diagram-circuit.jpg}
+  Accessed 7.9.2016.
+
+\bibitem[{Image source 2}()]{image2}
+{Image source 2}.
+\newblock URL
+  \url{http://shapeoko.github.io/Docs/content/sketches/electronics_layout.svg}
+  Accessed 7.9.2016.
+
+\bibitem[{Image source 3}()]{image3}
+{Image source 3}.
+\newblock URL \url{https://www.arduino.cc/new_home/assets/illu-arduino-UNO.png}
+  Accessed 7.9.2016.
+
+\bibitem[{Image source 4}()]{image4}
+{Image source 4}.
+\newblock URL
+  \url{http://www.nemsim.com/ece395blimp/fritzing/parts/svg/core/breadboard/basic_servo.svg}
+  Accessed 7.9.2016.
+
+\bibitem[{Image source 5}()]{image5}
+{Image source 5}.
+\newblock URL
+  \url{https://cdn.shopify.com/s/files/1/0176/3274/products/std-camera_1024x1024.jpg}
+  Accessed 7.9.2016.
 
 \bibitem[JUnit()]{junit}
 JUnit.

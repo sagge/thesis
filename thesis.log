@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.5)  7 SEP 2016 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.5)  9 SEP 2016 01:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1030,17 +1030,7 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 242.
 
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 245.
 
-(./thesis.aux
-
-LaTeX Warning: Label `fig:invalid_pin_test' multiply defined.
-
-
-LaTeX Warning: Label `fig:invalid_pin_test' multiply defined.
-
-
-LaTeX Warning: Label `fig:pushing_tool' multiply defined.
-
-)
+(./thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 387.
@@ -1258,72 +1248,73 @@ Package pdftex.def Info: images/example_test.png used on input line 78.
  [17 <./images/architecture-big.png>] [18 <./images/example_test.png>]) (./4Res
 ults_and_evaluation.tex [19]
 Chapter 4.
-<images/robot.jpg, id=468, 1003.75pt x 721.69624pt>
-File: images/robot.jpg Graphic file (type jpg)
- <use images/robot.jpg>
-Package pdftex.def Info: images/robot.jpg used on input line 16.
-(pdftex.def)             Requested size: 284.52756pt x 204.57333pt.
-
 [20
 
-] <images/pushing_tool.png, id=473, 690.58pt x 431.6125pt>
+] <images/robot.jpg, id=474, 1003.75pt x 721.69624pt>
+File: images/robot.jpg Graphic file (type jpg)
+
+<use images/robot.jpg>
+Package pdftex.def Info: images/robot.jpg used on input line 20.
+(pdftex.def)             Requested size: 284.52756pt x 204.57333pt.
+
+<images/pushing_tool.png, id=478, 690.58pt x 431.6125pt>
 File: images/pushing_tool.png Graphic file (type png)
 
 <use images/pushing_tool.png>
-Package pdftex.def Info: images/pushing_tool.png used on input line 25.
-(pdftex.def)             Requested size: 341.43306pt x 213.39528pt.
- [21 <./images/robot.jpg> <./images/pushing_tool.png>] <images/camera.jpg, id=4
-81, 1003.75pt x 769.87625pt>
-File: images/camera.jpg Graphic file (type jpg)
+Package pdftex.def Info: images/pushing_tool.png used on input line 31.
+(pdftex.def)             Requested size: 284.52756pt x 177.83159pt.
+ [21 <./images/robot.jpg>] [22 <./images/pushing_tool.png>] <images/electronics
+.png, id=494, 895.345pt x 774.895pt>
+File: images/electronics.png Graphic file (type png)
 
-<use images/camera.jpg>
-Package pdftex.def Info: images/camera.jpg used on input line 37.
+<use images/electronics.png>
+Package pdftex.def Info: images/electronics.png used on input line 51.
+(pdftex.def)             Requested size: 284.52756pt x 246.25699pt.
+ [23 <./images/electronics.png (PNG copy)>]
+<images/camera.jpg, id=517, 1003.75pt x 769.87625pt>
+File: images/camera.jpg Graphic file (type jpg)
+ <use images/camera.jpg>
+Package pdftex.def Info: images/camera.jpg used on input line 65.
 (pdftex.def)             Requested size: 284.52756pt x 218.23053pt.
 
-<images/card_feeder.png, id=482, 918.43124pt x 539.01375pt>
+<images/card_feeder.png, id=520, 918.43124pt x 539.01375pt>
 File: images/card_feeder.png Graphic file (type png)
 
 <use images/card_feeder.png>
-Package pdftex.def Info: images/card_feeder.png used on input line 52.
+Package pdftex.def Info: images/card_feeder.png used on input line 82.
 (pdftex.def)             Requested size: 341.43306pt x 200.38602pt.
- [22
-
- <./images/camera.jpg>]) (./5discussion.tex
-[23 <./images/card_feeder.png>]
+ [24 <./images/camera.jpg>]) (./5discussion.tex
+[25 <./images/card_feeder.png>]
 Chapter 5.
-) (./6conclusions.tex [24
+) (./6conclusions.tex [26
 
 ]
 Chapter 6.
-) (./thesis.bbl [25
+) (./thesis.bbl [27
 
-] [26
+] [28
 
-])
+] [29])
 
 Package todo Warning: Nothing \todo! I'm ignoring the \todos command on input l
 ine 536.
 
 
 AED: lastpage setting LastPage
-[27]
+[30]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 545.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 545.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 545.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 545.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D60FA25BC853D60BFB7E72F6CCA80FDB;2404.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 27BF03C3CDA901F751B9531241CE5411;2404.
  ) 
 Here is how much of TeX's memory you used:
- 21592 strings out of 493089
- 423394 string characters out of 6134843
- 525177 words of memory out of 5000000
- 24473 multiletter control sequences out of 15000+600000
+ 21632 strings out of 493089
+ 424003 string characters out of 6134843
+ 525759 words of memory out of 5000000
+ 24501 multiletter control sequences out of 15000+600000
  14541 words of font info for 56 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  55i,13n,67p,958b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1336,10 +1327,10 @@ ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (34 pages, 1894880 bytes).
+Output written on thesis.pdf (37 pages, 2091505 bytes).
 PDF statistics:
- 581 PDF objects out of 1000 (max. 8388607)
- 497 compressed objects within 5 object streams
- 116 named destinations out of 1000 (max. 500000)
- 363 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 641 PDF objects out of 1000 (max. 8388607)
+ 547 compressed objects within 6 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 368 words of extra memory for PDF output out of 10000 (max. 10000000)
 

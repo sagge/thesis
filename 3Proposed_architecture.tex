@@ -26,14 +26,13 @@ AAC environment also requires computer vision as changes on the screen have to o
 
 \FloatBarrier
 \subsection{The Robot}
+\label{subsection:The Robot proposal}
 
-To be able to manipulate the physical UI of the payment terminals, some sort of robot is needed. Robot should be therefore able to accommodate different types of payment terminals and be able to press all types of buttons in question. Low cost and low need for maintenance are also requirements for this robot.
+To be able to manipulate the physical UI of the payment terminals, some sort of robot is needed. Robot should be therefore able to accommodate different types of payment terminals and be able to press all types of buttons in question. Low cost and low need for maintenance are also requirements for this robot. Robot should also be able to accomodate multiple payment terminals to the working area at the same time in order to allow parrallel execution of acceptance tests. This is intended to speed up the overall process as the same tests have to be run on different models of payment terminals. Other option would also be to make changing of the device under test easy and fast so that the manual work required can be minimized.
 
 The master's thesis proposes the use of ShapeOko 2\footnote{\url{http://www.shapeoko.com/wiki/index.php/ShapeOko_2}} Computer Numerical Control (CNC) milling machine to be used as a manipulator. Though the machine is intended for milling purposes, it can be turned into a portal robot when milling tool is removed.
 
 ShapeOko 2 is an open-source project and plans of the machine are openly available on their GitHub\footnote{\url{https://github.com/shapeoko/Shapeoko_2}}. This allows easy modifications to the hardware parts of the robot if needed.
-
-ShapeOko 2 has a working area of about 300 mm x 300 mm x 60 mm and this meas that it can accommodate up to three payment terminals at same time to the working area. This allows parallel test case execution i.e. test cases can be run at the same time with different terminals.
 
 ShapeOko 2 is controlled by an Arduino board running a program called GRBL. GRBL is an open source, high performance G-code interpreter and it is used for controlling CNC milling machines in general\footnote{\url{http://www.shapeoko.com/wiki/index.php/Software}}. G-code command are sent from Raspberry Pi 2 to the Arduino on the robot using serial communication.
 
@@ -41,12 +40,13 @@ Robot should be equipped with a pushing tool that can be manipulate the buttons.
 
 \FloatBarrier
 \subsection{Card Feeder}
+\label{subsection:Card feeder}
 
 Insertion and removal of the credit card might be hard to accomplish in a simple way using just the robot described in previous section. This work proposes the use of generally designed card feeders to accomplish this task. Proposed card feeders consist of 3D printed base plate that attaches to the payment terminal, servo motor and 3D printed tray that attaches to the servo and to the credit card.
 
 Card feeders are designed in a way that they can be used with any types payment terminals that have the card slot at the bottom edge of the device. Standard hobby servos are used as servo motors in order to keep the cost of the setup low.
 
-Arduino board will be used to drive the servos as it can easily provide the needed pulse width modulated (PWM) signal for the servos. Raspberry Pi on the machine will communicate with Arduino through serial communication.
+Arduino board will be used to drive the servos as it can easily provide the needed pulse width modulated (PWM) signal for the servos. Arduino is suggested in order to ensure quality and accuracy of the PWM signal compared to what can be produced easily with non real time operating system running on the Raspberry Pi. Raspberry Pi on the machine will communicate with Arduino through serial communication.
 
 \section{Software}
 
