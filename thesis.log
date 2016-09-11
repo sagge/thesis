@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.5)  9 SEP 2016 01:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.5)  10 SEP 2016 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1121,14 +1121,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/aalto-logo-en.png, id=155, 326.9013pt x 133.2177pt>
+<images/aalto-logo-en.png, id=163, 326.9013pt x 133.2177pt>
 File: images/aalto-logo-en.png Graphic file (type png)
 
 <use images/aalto-logo-en.png>
 Package pdftex.def Info: images/aalto-logo-en.png used on input line 416.
 (pdftex.def)             Requested size: 188.52046pt x 76.82234pt.
  [2 <./images/aalto-logo-en.png>]
-<images/aalto-logo-fi.png, id=169, 281.853pt x 133.2177pt>
+<images/aalto-logo-fi.png, id=177, 281.853pt x 133.2177pt>
 File: images/aalto-logo-fi.png Graphic file (type png)
 
 <use images/aalto-logo-fi.png>
@@ -1139,7 +1139,7 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 426.
  [3 <./images/aalto-logo-fi.png>]
-<images/signature.png, id=180, 172.4844pt x 68.4156pt>
+<images/signature.png, id=188, 172.4844pt x 68.4156pt>
 File: images/signature.png Graphic file (type png)
 
 <use images/signature.png>
@@ -1183,7 +1183,7 @@ Overfull \hbox (7.13577pt too wide) in paragraph at lines 29--29
  |[]\OT1/cmr/bx/n/17.28 Common char-ac-ter-is-tics be-tween pay-ment
  []
 
-[6] <images/terminal1.png, id=298, 682.55pt x 592.2125pt>
+[6] <images/terminal1.png, id=308, 682.55pt x 592.2125pt>
 File: images/terminal1.png Graphic file (type png)
 
 <use images/terminal1.png>
@@ -1195,126 +1195,162 @@ Underfull \hbox (badness 3271) in paragraph at lines 44--44
 / / www . netskauppa . fi / images / t /
  []
 
-<images/izettle.png, id=301, 641.39626pt x 651.43375pt>
+<images/izettle.png, id=311, 641.39626pt x 651.43375pt>
 File: images/izettle.png Graphic file (type png)
 
 <use images/izettle.png>
 Package pdftex.def Info: images/izettle.png used on input line 51.
 (pdftex.def)             Requested size: 199.16928pt x 202.28033pt.
- [7 <./images/terminal1.png>] [8 <./images/izettle.png>] [9] <images/junit_exam
-ple.png, id=338, 534.99875pt x 217.81375pt>
+ [7 <./images/terminal1.png>] [8 <./images/izettle.png>] [9] [10] <images/junit
+_example.png, id=359, 534.99875pt x 217.81375pt>
 File: images/junit_example.png Graphic file (type png)
 
 <use images/junit_example.png>
-Package pdftex.def Info: images/junit_example.png used on input line 83.
+Package pdftex.def Info: images/junit_example.png used on input line 85.
 (pdftex.def)             Requested size: 369.88582pt x 150.5974pt.
- [10]
-<images/cucumber_example.png, id=348, 331.2375pt x 77.28876pt>
+ [11 <./images/junit_example.png>]
+<images/cucumber_example.png, id=369, 331.2375pt x 77.28876pt>
 File: images/cucumber_example.png Graphic file (type png)
 
 <use images/cucumber_example.png>
-Package pdftex.def Info: images/cucumber_example.png used on input line 94.
+Package pdftex.def Info: images/cucumber_example.png used on input line 96.
 (pdftex.def)             Requested size: 227.62204pt x 53.11111pt.
- [11 <./images/junit_example.png> <./images/cucumber_example.png>]
-<images/robot_example.png, id=365, 426.59375pt x 220.825pt>
+
+<images/robot_example.png, id=376, 426.59375pt x 220.825pt>
 File: images/robot_example.png Graphic file (type png)
 
 <use images/robot_example.png>
-Package pdftex.def Info: images/robot_example.png used on input line 107.
+Package pdftex.def Info: images/robot_example.png used on input line 109.
 (pdftex.def)             Requested size: 341.43306pt x 176.7512pt.
-) (./3Proposed_architecture.tex [12 <./images/robot_example.png>]
+ [12 <./images/cucumber_example.png>])
+(./3Proposed_architecture.tex [13 <./images/robot_example.png>]
 Chapter 3.
-[13
+[14
 
-] [14] [15] [16]
-<images/architecture-big.png, id=425, 812.03375pt x 454.69875pt>
+] [15] [16] [17]
+<images/architecture-big.png, id=448, 812.03375pt x 454.69875pt>
 File: images/architecture-big.png Graphic file (type png)
 
 <use images/architecture-big.png>
-Package pdftex.def Info: images/architecture-big.png used on input line 66.
+Package pdftex.def Info: images/architecture-big.png used on input line 68.
 (pdftex.def)             Requested size: 227.62204pt x 127.45354pt.
 
-Underfull \hbox (badness 4291) in paragraph at lines 67--67
+Underfull \hbox (badness 4291) in paragraph at lines 69--69
 []\OT1/cmr/m/n/12 Figure 3.1: []High level mod-u-lar ar-chi-tec-ture. Source: [
 ]$\OT1/cmtt/m/n/10.95 http : / /
  []
 
-<images/example_test.png, id=431, 423.5825pt x 462.72874pt>
+[18 <./images/architecture-big.png>]
+<images/example_test.png, id=465, 423.5825pt x 462.72874pt>
 File: images/example_test.png Graphic file (type png)
 
 <use images/example_test.png>
-Package pdftex.def Info: images/example_test.png used on input line 78.
+Package pdftex.def Info: images/example_test.png used on input line 80.
 (pdftex.def)             Requested size: 284.52756pt x 310.83156pt.
- [17 <./images/architecture-big.png>] [18 <./images/example_test.png>]) (./4Res
-ults_and_evaluation.tex [19]
+ [19 <./images/example_test.png>])
+(./4Results_and_evaluation.tex [20]
 Chapter 4.
-[20
+[21
 
-] <images/robot.jpg, id=474, 1003.75pt x 721.69624pt>
+] <images/robot.jpg, id=499, 1003.75pt x 721.69624pt>
 File: images/robot.jpg Graphic file (type jpg)
 
 <use images/robot.jpg>
-Package pdftex.def Info: images/robot.jpg used on input line 20.
+Package pdftex.def Info: images/robot.jpg used on input line 26.
 (pdftex.def)             Requested size: 284.52756pt x 204.57333pt.
-
-<images/pushing_tool.png, id=478, 690.58pt x 431.6125pt>
+ [22] [23 <./images/robot.jpg>]
+<images/pushing_tool.png, id=515, 690.58pt x 431.6125pt>
 File: images/pushing_tool.png Graphic file (type png)
 
 <use images/pushing_tool.png>
-Package pdftex.def Info: images/pushing_tool.png used on input line 31.
+Package pdftex.def Info: images/pushing_tool.png used on input line 41.
 (pdftex.def)             Requested size: 284.52756pt x 177.83159pt.
- [21 <./images/robot.jpg>] [22 <./images/pushing_tool.png>] <images/electronics
-.png, id=494, 895.345pt x 774.895pt>
+ [24 <./images/pushing_tool.png>]
+<images/electronics.png, id=527, 600.2425pt x 479.7925pt>
 File: images/electronics.png Graphic file (type png)
 
 <use images/electronics.png>
-Package pdftex.def Info: images/electronics.png used on input line 51.
-(pdftex.def)             Requested size: 284.52756pt x 246.25699pt.
- [23 <./images/electronics.png (PNG copy)>]
-<images/camera.jpg, id=517, 1003.75pt x 769.87625pt>
+Package pdftex.def Info: images/electronics.png used on input line 61.
+(pdftex.def)             Requested size: 284.52756pt x 227.43524pt.
+ [25 <./images/electronics.png>]
+<images/camera.jpg, id=536, 1003.75pt x 769.87625pt>
 File: images/camera.jpg Graphic file (type jpg)
  <use images/camera.jpg>
-Package pdftex.def Info: images/camera.jpg used on input line 65.
+Package pdftex.def Info: images/camera.jpg used on input line 75.
 (pdftex.def)             Requested size: 284.52756pt x 218.23053pt.
 
-<images/card_feeder.png, id=520, 918.43124pt x 539.01375pt>
+[26 <./images/camera.jpg>]
+<images/card_feeder.png, id=545, 918.43124pt x 539.01375pt>
 File: images/card_feeder.png Graphic file (type png)
 
 <use images/card_feeder.png>
-Package pdftex.def Info: images/card_feeder.png used on input line 82.
-(pdftex.def)             Requested size: 341.43306pt x 200.38602pt.
- [24 <./images/camera.jpg>]) (./5discussion.tex
-[25 <./images/card_feeder.png>]
+Package pdftex.def Info: images/card_feeder.png used on input line 92.
+(pdftex.def)             Requested size: 239.00298pt x 140.26363pt.
+
+<images/card_feeder_2.jpg, id=546, 1204.5pt x 737.75626pt>
+File: images/card_feeder_2.jpg Graphic file (type jpg)
+
+<use images/card_feeder_2.jpg>
+Package pdftex.def Info: images/card_feeder_2.jpg used on input line 100.
+(pdftex.def)             Requested size: 239.00298pt x 146.38913pt.
+ [27 <./images/card_feeder.png> <./images/card_feeder_2.jpg>] [28]
+<images/software_architecture.png, id=567, 494.84875pt x 354.32375pt>
+File: images/software_architecture.png Graphic file (type png)
+
+<use images/software_architecture.png>
+Package pdftex.def Info: images/software_architecture.png used on input line 12
+9.
+(pdftex.def)             Requested size: 341.43306pt x 244.47282pt.
+) (./5discussion.tex [29 <./images/software_architecture.png>] [30]
 Chapter 5.
-) (./6conclusions.tex [26
+) (./6conclusions.tex [31
 
 ]
 Chapter 6.
-) (./thesis.bbl [27
+) (./thesis.bbl [32
 
-] [28
+] [33
 
-] [29])
+] [34]) (./appendices.tex [35]
+Appendix A.
+File: images/aalto-logo-en.png Graphic file (type png)
+<use images/aalto-logo-en.png>
+Package pdftex.def Info: images/aalto-logo-en.png used on input line 13.
+(pdftex.def)             Requested size: 312.00119pt x 127.1537pt.
+File: images/aalto-logo-fi.png Graphic file (type png)
+ <use images/aalto-logo-fi.png>
+Package pdftex.def Info: images/aalto-logo-fi.png used on input line 14.
+(pdftex.def)             Requested size: 312.00119pt x 147.4709pt.
+
+<images/aalto-logo-se.pdf, id=615, 315.62114pt x 132.96677pt>
+File: images/aalto-logo-se.pdf Graphic file (type pdf)
+
+<use images/aalto-logo-se.pdf>
+Package pdftex.def Info: images/aalto-logo-se.pdf used on input line 15.
+(pdftex.def)             Requested size: 312.00119pt x 131.45084pt.
+)
 
 Package todo Warning: Nothing \todo! I'm ignoring the \todos command on input l
 ine 536.
 
 
 AED: lastpage setting LastPage
-[30]
+[36
+
+] [37 <./images/aalto-logo-se.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 545.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 545.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 545.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 545.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 27BF03C3CDA901F751B9531241CE5411;2404.
+(rerunfilecheck)             Checksum: 7093F548C2767136EBA03A89DFA5BC25;2534.
  ) 
 Here is how much of TeX's memory you used:
- 21632 strings out of 493089
- 424003 string characters out of 6134843
- 525759 words of memory out of 5000000
- 24501 multiletter control sequences out of 15000+600000
+ 21662 strings out of 493089
+ 424712 string characters out of 6134843
+ 526518 words of memory out of 5000000
+ 24511 multiletter control sequences out of 15000+600000
  14541 words of font info for 56 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  55i,13n,67p,958b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1327,10 +1363,10 @@ ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (37 pages, 2091505 bytes).
+Output written on thesis.pdf (44 pages, 2213425 bytes).
 PDF statistics:
- 641 PDF objects out of 1000 (max. 8388607)
- 547 compressed objects within 6 object streams
- 127 named destinations out of 1000 (max. 500000)
- 368 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 695 PDF objects out of 1000 (max. 8388607)
+ 593 compressed objects within 6 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 399 words of extra memory for PDF output out of 10000 (max. 10000000)
 

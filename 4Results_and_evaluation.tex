@@ -8,12 +8,18 @@ This chapter will cover the subsystems and steps taken that were needed to achie
 \section{Hardware arrangements}
 \label{section:Hardware arrangements}
 
+AAT environment presented in this Master's Thesis consists of several different hardware components. Environment had to be a smooth combination of manipulation and computing hardware and hardware architecture is thought to be modular in a sense that every component has a specific functionality. This allows easy maintenance and upgrade of each subsystem.
+
+As stated in Chapter~\ref{chapter:Proposed architecture}, one of the requirements for this AAT environment was affordable price. For this reason hardware decisions have been made taking quality-price ratio into consideration and hobby-grade electronics were used widely through out the environment. 3D printing was also utilized as a manufacturing technique of custom made components for its relatively low manufacturing price and relatively acceptable quality of outputted plastic parts.
+
+Main components of the AAT environment are the robot that handles the manipulation of the payment terminals, Raspberry Pi 2 Model B single-board computer which was used as a main computer of the environment, two Arduino Uno boards for more specific control needs of certain components, camera for machine vision and 3D printed payment card feeders for the payment terminals. These subsystems and components are described in following subsections.
+
 \subsection{The Robot}
 \label{subsection:Robot}
 
-As suggested in Section \ref{subsection:The Robot proposal}, ShapeOko 2 open-source CNC milling machine was used as robot manipulating the payment terminals. ShapeOko was built according to the instructions found from the homepage of the project (\emph{\cite{shapeoko}}). Construction was altered only regarding to the tool that was used as the spindle motor was substituted by 3D printed pushing tool.
+As suggested in Section \ref{subsection:The Robot proposal}, ShapeOko 2 open-source 3-axis CNC milling machine was used as robot manipulating the payment terminals. ShapeOko was built according to the instructions found from the homepage of the project (\emph{\cite{shapeoko}}). Construction was altered only regarding to the tool that was used as the spindle motor was substituted by 3D printed pushing tool.
 
-ShapeOko 2 has a working area of about 300 mm x 300 mm x 60 mm and this meas that it can accommodate up to three payment terminals at same time to the working area. This allows parallel test case execution i.e. test cases can be run at the same time with different terminals. Arrangement of the devices was implemented by dividing the work area into three sections. Each payment terminal was attached to a standard sized MDF-plate and each section of the working are can accommodate one of these MDF-plates. Holes were drilled in to the working area and nuts were inserted in to these holes at the back of the work bench. MDF-plates attach to these holes with screws enabling easy installation and removal of plates with different models of payment terminals.
+ShapeOko 2 has a working area of about 300 mm x 300 mm x 60 mm and this means that it can accommodate up to three payment terminals at same time to the working area. This allows parallel test case execution i.e. test cases can be run at the same time with different terminals. Arrangement of the devices was implemented by dividing the work area into three sections. Each payment terminal was attached to a standard sized MDF-plate and each section of the working are can accommodate one of these MDF-plates. Holes were drilled in to the working area and nuts were inserted in to these holes at the back of the work bench. MDF-plates attach to these holes with screws enabling easy installation and removal of plates with different models of payment terminals. MDF-plates can be observed in Figure \ref{fig:card_feeder_2}.
 
 \begin{figure}[ht]
   \begin{center}
@@ -24,12 +30,16 @@ ShapeOko 2 has a working area of about 300 mm x 300 mm x 60 mm and this meas tha
 \end{figure}
 \FloatBarrier
 
-Section \ref{subsection:The Robot proposal} suggests equipping the robot with a pushing tool and this was implemented to the final solution by 3D printing the tool from PLA plastic. Tool consisted of two parts: cylindrical beam and a stem inside of it. Stem slides inside the beam and the two parts are segregated with a spring. Spring provides the needed attenuation when pressing the buttons of the payment terminals. Pushing tool can be observed in Figure \ref{fig:pushing_tool} and Figure \ref{fig:robot_final}.
+Each axis of the robot is controlled by stepper motors. Use of stepper motors instead of servo motors offers affordable way of controlling each axis in a relatively fast and reliable manner. X- and Z- axises are both manipulated using one stepper motor on each axle and bigger Y-axis is manipulated using two parallel stepper motors. Manipulation of payment terminal buttons stresses the machine much less than actual milling of materials that the machine is designed for and this allows faster movement of the machine that would be possible when executing actual milling job.
+
+The robot was controlled using G-code that was sent from the main computer to an Arduino Uno attached to the robot. Arduino Uno and the main computer were connected via USB connection. More detailed description of the electronics can be found from Section \ref{subsection:Computing hardware}.
+
+Section \ref{subsection:The Robot proposal} suggested equipping the robot with a pushing tool and this was implemented to the final solution by 3D printing the tool from PLA plastic. Tool consisted of two parts: cylindrical beam and a stem inside of it. Stem slides inside the beam and the two parts are segregated with a spring. Spring provides the needed attenuation in order to forgive slight misalignments and too long trajectories when pushing the buttons of the payment terminals. Pushing tool can be observed in Figure \ref{fig:pushing_tool} and Figure \ref{fig:robot_final}.
 
 \begin{figure}[ht]
   \begin{center}
     \includegraphics[width=10cm]{images/pushing_tool.png}
-    \caption{CAD design of the pushing tool.}
+    \caption{CAD design of the pushing tool. Metal spring is inserted inside to the cylinder and the stem on the right side of the image slides to the cylinder.}
     \label{fig:pushing_tool}
   \end{center}
 \end{figure}
@@ -38,18 +48,18 @@ Section \ref{subsection:The Robot proposal} suggests equipping the robot with a 
 \subsection{Computing hardware}
 \label{subsection:Computing hardware}
 
-Raspberry Pi 2 Model B single-board computer is used as a main computer of the AAT environment. Raspberry Pi provides optimal computing power compared to it's price and has big community of users and developers world wide. Board is covered with 3D printed enclosure and it is attached to the robot.
+Raspberry Pi 2 Model B single-board computer is used as a main computer of the AAT environment. Raspberry Pi provides optimal computing power compared to it's price and has big community of users and developers world wide. 3D printed enclosure was manufactured to protect the computer board and it was attached to the moving Z-axis assembly of the robot.
 
 In addition to the Raspberry Pi 2, the robot also has two Arduino Uno boards for handling some specific functionalities of the AAT environment. One Arduino Uno is interpreting the G-code commands sent from the Raspberry Pi and it is connected to the stepper motors of the robot through a stepper motor driver shield\footnote{\url{http://www.shapeoko.com/wiki/index.php/GrblShield/}}.
 
-Second Arduino Uno is handling the servo motor control of the card feeders. It is connected to the Raspberry Pi via USB connection and control commands to Arduino Uno are sent using serial communication. Arduino board provides PWM signal to the servo motors and can accommodate three card feeders at the same time. Self-made circuit board was fabricated and attached on top of the Arduino board in order to make connecting the servo motor cables easy.
+Second Arduino Uno is handling the servo motor control of the card feeders. It is connected to the Raspberry Pi via USB connection and control commands to Arduino Uno are sent using serial communication. Arduino Uno board provides PWM signal to the servo motors and can accommodate three card feeders at the same time. Self-made circuit board was fabricated and attached on top of the Arduino Uno board in order to make connecting the servo motor cables easy.
 
-Connection diagram and main electronic components are visualizes in Figure \ref{fig:electronics}. 
+Connection diagram and main electronic components are visualized in Figure \ref{fig:electronics}.
 
 \begin{figure}[ht]
   \begin{center}
     \includegraphics[width=10cm]{images/electronics.png}
-    \caption{Main electronic components and connection diagram of the robot. Sources: \emph{\cite{image1}}, \emph{\cite{image2}}, \emph{\cite{image3}}, \emph{\cite{image4}}, \emph{\cite{image5}}}
+    \caption{Main electronic components and connection diagram of the robot. Note that Y-axis is manipulated using two stepper motors.}
     \label{fig:electronics}
   \end{center}
 \end{figure}
@@ -63,7 +73,7 @@ As suggested in Section \ref{section:Proposed hardware}, Raspberry Pi's own came
 \begin{figure}[ht]
   \begin{center}
     \includegraphics[width=10cm]{images/camera.jpg}
-    \caption{Camera is attached to the bottom of the Raspberry Pi's enclosure.}
+    \caption{Camera is attached to the bottom of the Raspberry Pi's enclosure. Image also shows the attachment of the Raspberry Pi enclosure to the Z-axis assembly of the robot.}
     \label{fig:camera}
   \end{center}
 \end{figure}
@@ -73,15 +83,23 @@ As suggested in Section \ref{section:Proposed hardware}, Raspberry Pi's own came
 \subsection{Card feeder arrangements}
 \label{subsection:Card feeder arrangements}
 
-As suggested in Section \ref{subsection:Card feeder}, card feeder frames were 3D printed using PLA plastic. Finalized card feeders consisted of bottom plate, payment card holder and servo motor. Servo motor attaches directly to the bottom plate and card holder attaches to the arm of the servo motor.
+As suggested in Section \ref{subsection:Card feeder}, card feeder structures were 3D printed using PLA plastic. Finalized card feeders consisted of bottom plate, payment card holder and servo motor. Servo motor attaches directly to the bottom plate and card holder attaches to the arm of the servo motor.
 
-Simplistic design can be used with different kinds of payment terminals which have the card slot at the bottom edge of the device. Flexibility provided by the plastic structure and the payment card itself allows the solution to be compatible with most of the payment terminals of this type. Design of the card feeders is presented in Figure \ref{fig:card_feeder}
+Simplistic design can be used with different kinds of payment terminals which have the card slot at the bottom edge of the device. Flexibility provided by the plastic structure and the payment card itself allows the solution to be compatible with most of the payment terminals of this type. Design of the card feeders is presented in Figure \ref{fig:card_feeder}. Figure \ref{fig:card_feeder_2} shows ready part installed to the environment presenting the servo installation and attachment of the card holder to the servo arm.
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=12cm]{images/card_feeder.png}
-    \caption{CAD design of the card feeder.}
+    \includegraphics[width=8.4cm]{images/card_feeder.png}
+    \caption{CAD design of the card feeder. Servo motor attaches to the bigger plate on the left and card holder on the right attaches to the arm of the servo motor. Card holder is designed to fit standard sized payment card.}
     \label{fig:card_feeder}
+  \end{center}
+\end{figure}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=8.4cm]{images/card_feeder_2.jpg}
+    \caption{Card feeder installed to the environment. Image also presents the idea of MDF-plates described in Section \ref{subsection:Robot}.}
+    \label{fig:card_feeder_2}
   \end{center}
 \end{figure}
 \FloatBarrier
@@ -89,8 +107,31 @@ Simplistic design can be used with different kinds of payment terminals which ha
 \section{Software arrangements}
 \label{section:Software arrangements}
 
+As proposed in Section \ref{section:software}, this chapter will describe decisions and arrangements regarding to the software point of view of the AAT environment. Proposal was followed rather loyally though some additional arrangements had to be implemented to the environment in order to increase usability and effectiveness.
+
+Modular architecture was implemented also to the software level similar to the hardware level. Implementation only included open source or self made software components from the operating system to individual software libraries used in the AAT environment.
+
+This section describes the individual software components of the AAT environment and their usage and function in the whole system. System configuration, test framework and libraries and the final test suite syntax will be presented.
+
 \subsection{Software architecture}
 \label{subsection:Software architecture}
+
+Suggested already in the Section \ref{section:software}, Raspbian Wheesy Debian-based operating system was used with the Rasbperry Pi 2 Model B single-board computer. Operating system was used to run the test framework, test libraries and other software components and to handle the communication with different subsystems of the AAT environment.
+
+Robot Framework was used as a test framework for its modularity, simplicity and versatility. RF was run on top of Python runtime environment and all test libraries were written using Python programming language\footnote{https://www.python.org/}. Python test libraries were implemented to handle the needed serial communication to the Arduino board on ShapeOko 2 and to the other Arduino board used for controlling the card feeder servo motors. Picamera\footnote{http://picamera.readthedocs.io/en/release-1.12/} Python library was used for providing the needed Python interface for communication with the Raspberry Pi camera module.
+
+As different keyboard layouts have to be supported, configuration files for keyboard layouts were implemented. There are two types of configuration files: one for device locations in the working area of the robot and one for each keyboard layout. In this way configuration of devices under test can be easily modified at the test case level.
+
+Overall visualization of the software architecture can be observed in Figure \ref{fig:software_architecture}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=12cm]{images/software_architecture.png}
+    \caption{Simplified visualization of the software architecture of the AAT environment.}
+    \label{fig:software_architecture}
+  \end{center}
+\end{figure}
+\FloatBarrier
 
 \subsection{Robot Framework and libraries}
 \label{subsection:Robot Framework and libraries}
@@ -100,6 +141,9 @@ Simplistic design can be used with different kinds of payment terminals which ha
 
 \subsection{Test syntax}
 \label{subsection:Test syntax}
+
+\subsection{Test result syntax}
+\label{subsection:Test result syntax}
 
 
 \section{Results}

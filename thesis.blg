@@ -3,56 +3,51 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: plainnat.bst
 Database file #1: sources.bib
-Warning--empty year in shapeoko
 Warning--empty year in cucumber
 Warning--there's a number but no volume in ebert2009embedded
 Warning--empty year in gherkin
-Warning--empty year in image1
-Warning--empty year in image2
-Warning--empty year in image3
-Warning--empty year in image4
-Warning--empty year in image5
 Warning--empty year in junit
 Warning--empty year in robotframework
-You've used 23 entries,
+Warning--empty year in shapeoko
+You've used 19 entries,
             2773 wiz_defined-function locations,
-            709 strings with 8087 characters,
-and the built_in function-call counts, 8394 in all, are:
-= -- 755
-> -- 347
-< -- 24
-+ -- 125
-- -- 102
-* -- 505
-:= -- 1269
-add.period$ -- 74
-call.type$ -- 23
-change.case$ -- 89
-chr.to.int$ -- 23
-cite$ -- 57
-duplicate$ -- 444
-empty$ -- 818
-format.name$ -- 139
-if$ -- 1821
+            698 strings with 7577 characters,
+and the built_in function-call counts, 7336 in all, are:
+= -- 668
+> -- 318
+< -- 20
++ -- 112
+- -- 93
+* -- 463
+:= -- 1116
+add.period$ -- 67
+call.type$ -- 19
+change.case$ -- 78
+chr.to.int$ -- 19
+cite$ -- 44
+duplicate$ -- 389
+empty$ -- 690
+format.name$ -- 128
+if$ -- 1591
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 16
-newline$ -- 121
-num.names$ -- 92
-pop$ -- 276
+missing$ -- 18
+newline$ -- 106
+num.names$ -- 76
+pop$ -- 219
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 69
 quote$ -- 0
-skip$ -- 351
+skip$ -- 301
 stack$ -- 0
-substring$ -- 178
-swap$ -- 50
+substring$ -- 170
+swap$ -- 46
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 233
-warning$ -- 11
-while$ -- 82
+type$ -- 184
+warning$ -- 6
+while$ -- 70
 width$ -- 0
-write$ -- 283
-(There were 11 warnings)
+write$ -- 250
+(There were 6 warnings)
