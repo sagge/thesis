@@ -10,6 +10,7 @@ Warning--empty year in gherkin
 Warning--empty year in grbl
 Warning--empty year in grbl_shield
 Warning--empty year in junit
+Warning--empty year in opencv
 Warning--empty year in picamera
 Warning--empty year in pyserial
 Warning--empty year in pytesseract
@@ -18,48 +19,49 @@ Warning--empty year in raspberry
 Warning--empty year in raspberry_camera
 Warning--empty year in raspbian
 Warning--empty year in robotframework
+Warning--empty year in cnc-library
 Warning--empty year in shapeoko
 Warning--empty year in shapeoko_git
 Warning--empty year in tesseract
-You've used 33 entries,
+You've used 36 entries,
             2773 wiz_defined-function locations,
-            751 strings with 9166 characters,
-and the built_in function-call counts, 11702 in all, are:
-= -- 1037
-> -- 489
-< -- 34
-+ -- 177
-- -- 144
-* -- 693
-:= -- 1769
-add.period$ -- 101
-call.type$ -- 33
-change.case$ -- 124
-chr.to.int$ -- 33
-cite$ -- 84
-duplicate$ -- 618
-empty$ -- 1153
-format.name$ -- 195
-if$ -- 2535
+            764 strings with 9518 characters,
+and the built_in function-call counts, 12599 in all, are:
+= -- 1115
+> -- 519
+< -- 37
++ -- 189
+- -- 153
+* -- 738
+:= -- 1910
+add.period$ -- 111
+call.type$ -- 36
+change.case$ -- 133
+chr.to.int$ -- 36
+cite$ -- 92
+duplicate$ -- 668
+empty$ -- 1249
+format.name$ -- 207
+if$ -- 2728
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 21
-newline$ -- 167
-num.names$ -- 132
-pop$ -- 409
+missing$ -- 23
+newline$ -- 182
+num.names$ -- 144
+pop$ -- 445
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 123
 quote$ -- 0
-skip$ -- 493
+skip$ -- 531
 stack$ -- 0
-substring$ -- 217
-swap$ -- 65
+substring$ -- 223
+swap$ -- 68
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 333
-warning$ -- 18
-while$ -- 115
+type$ -- 361
+warning$ -- 20
+while$ -- 124
 width$ -- 0
-write$ -- 392
-(There were 18 warnings)
+write$ -- 427
+(There were 20 warnings)

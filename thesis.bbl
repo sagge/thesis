@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -71,6 +71,13 @@ Charles Lowell and Jeremy Stell-Smith.
 \newblock In \emph{Extreme programming and agile processes in software
   engineering}, pages 331--333. Springer, 2003.
 
+\bibitem[Martin(2009)]{clean-code}
+R.C. Martin.
+\newblock \emph{Clean Code: A Handbook of Agile Software Craftsmanship}.
+\newblock Robert C. Martin series. Prentice Hall, 2009.
+\newblock ISBN 9780132350884.
+\newblock URL \url{https://books.google.com/books?id=hjEFCAAAQBAJ}.
+
 \bibitem[Morgan and Finnegan(2007)]{morgan2007benefits}
 Lorraine Morgan and Patrick Finnegan.
 \newblock Benefits and drawbacks of open source software: an exploratory study
@@ -98,6 +105,10 @@ G.J. Myers, C.~Sandler, and T.~Badgett.
 \newblock
   \url{http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html/}.
   Accessed 6.5.2016.
+
+\bibitem[{OpenCV}()]{opencv}
+{OpenCV}.
+\newblock URL \url{http://opencv.org/} Accessed 18.7.2016.
 
 \bibitem[Paulson et~al.(2004)Paulson, Succi, and
   Eberlein]{paulson2004empirical}
@@ -161,6 +172,11 @@ Rudolf Ramler, Werner Putsch\"{o}gl, and Dietmar Winkler.
 \bibitem[{Robot Framework}()]{robotframework}
 {Robot Framework}.
 \newblock URL \url{http://robotframework.org/} Accessed 1.6.2016.
+
+\bibitem[{Robot Framework CNC Library}()]{cnc-library}
+{Robot Framework CNC Library}.
+\newblock URL \url{https://github.com/Eficode/robotframework-cnclibrary}
+  Accessed 1.8.2016.
 
 \bibitem[{ShapeOko 2}()]{shapeoko}
 {ShapeOko 2}.

@@ -404,6 +404,10 @@ INPUT ./images/conf2.png
 INPUT images/software_architecture.png
 INPUT ./images/software_architecture.png
 INPUT ./images/software_architecture.png
+INPUT images/resource.png
+INPUT ./images/resource.png
+INPUT ./images/resource.png
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/eurosym/feymr10.tfm
 INPUT images/passed_report.png
 INPUT ./images/passed_report.png
 INPUT ./images/passed_report.png
@@ -453,3 +457,4 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb

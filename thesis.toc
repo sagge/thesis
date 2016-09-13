@@ -30,15 +30,13 @@
 \contentsline {subsection}{\numberline {4.1.4}Card Feeder Arrangements}{29}{subsection.4.1.4}
 \contentsline {section}{\numberline {4.2}Software Arrangements}{31}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Software Architecture}{31}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Robot Framework Test Framework}{33}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Robot Control and Card Feeder Libraries}{33}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Card Feeder Software}{33}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Computer Vision Library}{33}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Test Syntax}{33}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Test Result Syntax}{33}{subsection.4.2.7}
-\contentsline {section}{\numberline {4.3}Results}{35}{section.4.3}
-\contentsline {section}{\numberline {4.4}Evaluation}{35}{section.4.4}
-\contentsline {chapter}{\numberline {5}Discussion}{36}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions}{37}{chapter.6}
-\contentsline {chapter}{Bibliography}{38}{chapter*.4}
-\contentsline {chapter}{\numberline {A}First appendix}{42}{appendix.A}
+\contentsline {subsection}{\numberline {4.2.2}Robot Framework Test Framework}{34}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Robot Control and Card Feeder Libraries}{35}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Card Feeder Software}{35}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Computer Vision Library}{36}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Test Syntax}{37}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Test Result Syntax}{37}{subsection.4.2.7}
+\contentsline {chapter}{\numberline {5}Discussion}{39}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{40}{chapter.6}
+\contentsline {chapter}{Bibliography}{41}{chapter*.4}
+\contentsline {chapter}{\numberline {A}First appendix}{45}{appendix.A}

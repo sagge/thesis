@@ -120,7 +120,11 @@ Suggested already in the Section \ref{section:software}, Raspbian Wheesy Debian-
 
 Robot Framework was used as a test framework for its modularity, simplicity and versatility. RF was run on top of Python runtime environment and all test libraries were written using Python programming language (\emph{\cite{python}}). Python test libraries were implemented to handle the needed serial communication to the Arduino board on ShapeOko 2 and to the other Arduino board used for controlling the card feeder servo motors. Picamera Python library was used for providing the needed Python interface for communication with the Raspberry Pi camera module (\emph{\cite{picamera}}). Overall visualization of the software architecture can be observed in Figure \ref{fig:software_architecture}.
 
-As different keyboard layouts have to be supported, configuration files for keyboard layouts were implemented. There are two types of configuration files: one for device locations in the working area of the robot and one for each keyboard layout. In this way configuration of devices under test can be easily modified at the test case level. Examples of these configuration files can be observed in Figure \ref{fig:conf1} and in Figure \ref{fig:conf2}.
+As different keyboard layouts have to be supported, configuration files for keyboard layouts were implemented. There are two types of configuration files: one for device locations in the working area of the robot and one for each keyboard layout. Configuration file for device locations defines the coordinates of "number one" -button and the height in respect of Z-axis where the transitions over the buttons are safe. This is Z-axis coordinate is used for transitions between pressings of buttons. 
+
+Configuration file for each keyboard layout defines the button locations in respect to the "number one" -button. Z-axis coordinates defined in this file define the distance from the safe transition height to the full press of the button. Location of the screen of each device is also defined in these configuration files and it is used for driving the robot to the optimal place for capturing the image of the display of the device under test. 
+
+By dividing the configuration files into different levels enables easy modification and adding of new device configurations. Desired configurations can be also changed easily at the test case level. Examples of these configuration files can be observed in Figure \ref{fig:conf1} and in Figure \ref{fig:conf2}.
 
 \begin{figure}[ht]
   \begin{center}
@@ -152,26 +156,65 @@ As different keyboard layouts have to be supported, configuration files for keyb
 \subsection{Robot Framework Test Framework}
 \label{subsection:Robot Framework and libraries}
 
+As proposed in Section \ref{subsection:test framework}, Robot Framework was used as a test framework for AAT environment presented in this Master's Thesis. RF was equipped with several different test libraries to achieve the desired functionality of the AAT environment.
+
+RF is a generic keyword driven test framework and this means that the keywords used for different test steps can be defined in desired level of abstraction, lowest being that one keyword would handle only one library method and highest being that one keyword would be responsible of whole test case. This allows high versatility but also makes the developer responsible of writing test cases according to commonly accepted best practices. Test cases developed in the scope of this Master's thesis were developed to be as human readable as possible and to mimic the mindset of human when dividing the test cases into steps. This naturally depends of the person that is thinking the test steps but it was attempted to make the devision between each test steps as clear as possible.
+
+Test cases and steps were also divided into different keywords in a sense of reusability. According to \emph{\cite{clean-code}} any code written should be as readable and understandable as possible and these directions were used as guidelines when the test cases were implemented. \emph{\cite{clean-code}} also advices that code should be written in highly modular manner and this was followed when the keywords were combined in different abstraction levels.
+
+Keywords used in test cases were defined in three different levels: test library keywords, shared keywords and test suite specific keywords. Test library keywords are the most low level keywords and implement the functionality between RF and SUT using different interfaces. These were written using Python language. 
+
+AAT environment also introduced a resource file for combining the keywords that were shared with different test suites. Abstraction level of keywords found from this file can be qualified as middle or high level. Resource file is also used for defining common test libraries between test suites and common set-up and tear-down commands of test cases and suites. Resource file is imported to each test suite file. Example of partial resource file can be seen in Figure \ref{fig:resource}
+
+Based on the work done in this Master's Thesis, open source RF library was published (\emph{\cite{cnc-library}}). This library can be used for easy controlling of devices that use serial communication as a communication protocol and are controlled using G-code commands. library is intended for use in similar circumstances described in this Master's Thesis but can also be used as general G-code control library for Robot Framework.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=12cm]{images/resource.png}
+    \caption{An example of a partial resource file for Robot Framework tests.}
+    \label{fig:resource}
+  \end{center}
+\end{figure}
+\FloatBarrier
+
 \subsection{Robot Control and Card Feeder Libraries}
 \label{subsection:libraries}
+
+
 
 \subsection{Card Feeder Software}
 \label{subsection:card feeder software}
 
+For controlling the servo motors of the card feeders with Arduino board, an Arduino program was developed. As described in previous section, the control commands are sent to the Arduino using serial communication. Messages read by Arduino consists of two parts: card feeder number and desired angle of the servo. After receiving the message, Arduino program interprets the device number and angle from it and uses switch-case code structure to control the appropriate card feeder. 
+
+Servo motors of the card feeders are controlled using PWM control signals. Arduino program can drive the servo motors to every angle that the servo motor is capable of moving and the angles of inserting the card and removing the card can be defined in the test case level.
+
 \subsection{Computer Vision Library}
 \label{subsection:Computer vision library}
+
+As proposed in Section \ref{subsection:test libraries}, computer vision library was implemented for extracting the optical features on the display to format that can be interpreted programmatically. The main task of the computer vision library is to interpret the text displayed in the screen of the payment terminal.
+
+Computer vision library was implemented using Python language and Tesseract optical character recognition (OCR) engine is used to extract the found characters to textual format. Image captured by the Raspberry Pi camera module is slightly manipulated in order to make the text extraction more efficient and reliable. Image manipulations are made using OpenCV Python library (\emph{\cite{opencv}}). Image is first being slightly blurred using Gaussian blur filter in order to reduce the amount of disturbance caused by pixel edges of the display. Color space of the image is then converted to gray-scale. Finally, the gray-scale image is converted into binary BW image by comparing the pixel value to certain threshold value. Threshold value is adjusted according to the screen brightness and lightning conditions of the space where the robot is situated. These image manipulations produce an image where text in the display is clearly distinguishable from the other features providing good foundation for the character recognition.
+
+Tesseract OCR engine can basically extract any kind of common characters from the image and this can sometimes cause unwanted noise as small dirt particles and disturbances in the image can be interpreted to some exotic special character. In order to make the task of OCR engine easier in addition to the binary BW image, possible characters are white-listed. Final list of possible characters that are accepted by the OCR engine is: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,\euro". This also helps the OCR engine to distinguish right characters from possible similar looking foreign-language counterparts.
+
+Computer vision library outputs all found textual features from the source image and validation of right content is being done using Robot Framework. 
 
 \subsection{Test Syntax}
 \label{subsection:Test syntax}
 
+Example test case can be seen in Figure \ref{fig:invalid_pin_test}.
+
 \subsection{Test Result Syntax}
 \label{subsection:Test result syntax}
+
+
 
 \begin{figure}[ht]
   \begin{center}
     \includegraphics[width=.8\textwidth]{images/passed_report.png}
     \caption{Report of passed tests.}
-    \label{fig:software_architecture}
+    \label{fig:passed report}
   \end{center}
 \end{figure}
 \FloatBarrier
@@ -180,14 +223,7 @@ As different keyboard layouts have to be supported, configuration files for keyb
   \begin{center}
     \includegraphics[width=.8\textwidth]{images/failed_report.png}
     \caption{Report of failed tests.}
-    \label{fig:software_architecture}
+    \label{fig:failed report}
   \end{center}
 \end{figure}
 \FloatBarrier
-
-
-\section{Results}
-\label{section:Results}
-
-\section{Evaluation}
-\label{section:Evaluation}
