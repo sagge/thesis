@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,6 +9,15 @@
 James Bach.
 \newblock Test automation snake oil.
 \newblock \emph{Windows Tech Journal}, 10, 1996.
+
+\bibitem[{BCN3D-Moveo}()]{bcn3d}
+{BCN3D-Moveo}.
+\newblock URL \url{https://github.com/BCN3D/BCN3D-Moveo} Accessed 5.9.2016.
+
+\bibitem[Broekman and Notenboom(2003)]{broekman2003testing}
+Bart Broekman and Edwin Notenboom.
+\newblock \emph{Testing embedded software}.
+\newblock Pearson Education, 2003.
 
 \bibitem[Cucumber()]{cucumber}
 Cucumber.
@@ -23,6 +32,15 @@ Christof Ebert and Capers Jones.
 Gherkin.
 \newblock URL \url{https://github.com/cucumber/cucumber/wiki/Gherkin} Accessed
   7.9.2016.
+
+\bibitem[{GRBL}()]{grbl}
+{GRBL}.
+\newblock URL \url{https://github.com/grbl/grbl} Accessed 15.7.2016.
+
+\bibitem[{grblShield}()]{grbl_shield}
+{grblShield}.
+\newblock URL \url{https://www.synthetos.com/project/grblshield/} Accessed
+  1.9.2016.
 
 \bibitem[Haugset and Hanssen(2008)]{haugset2008automated}
 Borge Haugset and Geir~Kjetil Hanssen.
@@ -89,12 +107,56 @@ James~W Paulson, Giancarlo Succi, and Armin Eberlein.
 \newblock \emph{Software Engineering, IEEE Transactions on}, 30\penalty0
   (4):\penalty0 246--256, 2004.
 
+\bibitem[{Picamera}()]{picamera}
+{Picamera}.
+\newblock URL \url{http://picamera.readthedocs.io/en/release-1.12/} Accessed
+  7.9.2016.
+
 \bibitem[Pressman(2005)]{pressman2005software}
 R.S. Pressman.
 \newblock \emph{Software Engineering: A Practitioner's Approach}.
 \newblock McGraw-Hill higher education. Boston, 2005.
 \newblock ISBN 9780073019338.
 \newblock URL \url{https://books.google.com/books?id=bL7QZHtWvaUC}.
+
+\bibitem[{pySerial}()]{pyserial}
+{pySerial}.
+\newblock URL \url{http://pythonhosted.org/pyserial/} Accessed 4.5.2016.
+
+\bibitem[{Pytesseract}()]{pytesseract}
+{Pytesseract}.
+\newblock URL \url{https://pypi.python.org/pypi/pytesseract} Accessed 4.5.2016.
+
+\bibitem[{Python}()]{python}
+{Python}.
+\newblock URL \url{https://www.python.org/} Accessed 7.9.2016.
+
+\bibitem[Ramler et~al.(2014)Ramler, Putsch\"{o}gl, and Winkler]{Ramler}
+Rudolf Ramler, Werner Putsch\"{o}gl, and Dietmar Winkler.
+\newblock Automated testing of industrial automation software: Practical
+  receipts and lessons learned.
+\newblock In \emph{Proceedings of the 1st International Workshop on Modern
+  Software Engineering Methods for Industrial Automation}, MoSEMInA 2014, pages
+  7--16, New York, NY, USA, 2014. ACM.
+\newblock ISBN 978-1-4503-2851-7.
+\newblock \doi{10.1145/2593783.2593788}.
+\newblock URL \url{http://doi.acm.org/10.1145/2593783.2593788}.
+
+\bibitem[{Raspberry Pi 2}()]{raspberry}
+{Raspberry Pi 2}.
+\newblock URL
+  \url{https://www.raspberrypi.org/products/raspberry-pi-2-model-b/} Accessed
+  1.6.2016.
+
+\bibitem[{Raspberry Pi Camera Module}()]{raspberry_camera}
+{Raspberry Pi Camera Module}.
+\newblock URL \url{https://www.raspberrypi.org/products/camera-module/}
+  Accessed 1.6.2016.
+
+\bibitem[{Raspbian}()]{raspbian}
+{Raspbian}.
+\newblock URL \url{https://www.raspberrypi.org/downloads/raspbian/} Accessed
+  4.5.2016.
 
 \bibitem[{Robot Framework}()]{robotframework}
 {Robot Framework}.
@@ -104,6 +166,10 @@ R.S. Pressman.
 {ShapeOko 2}.
 \newblock URL \url{http://www.shapeoko.com/wiki/index.php/ShapeOko_2} Accessed
   1.6.2016.
+
+\bibitem[{ShapeOko 2 Github}()]{shapeoko_git}
+{ShapeOko 2 Github}.
+\newblock URL \url{https://github.com/shapeoko/Shapeoko_2} Accessed 15.7.2016.
 
 \bibitem[Sommerville(2011)]{sommerville2011software}
 I.~Sommerville.
@@ -117,5 +183,10 @@ Stanislav Stresnjak and Zeljko Hocenski.
 \newblock Usage of robot framework in automation of functional test regression.
 \newblock In \emph{ICSEA 2011 The Sixth International Conference on Software
   Engineering Advances}, 2011.
+
+\bibitem[{Tesseract OCR}()]{tesseract}
+{Tesseract OCR}.
+\newblock URL \url{https://github.com/tesseract-ocr/tesseract} Accessed
+  4.5.2016.
 
 \end{thebibliography}

@@ -27,6 +27,7 @@ According to \emph{\cite{paulson2004empirical}} open source projects usually hav
 As the overall security of the payment terminals is a high priority, use of open source technologies can also be seen as an effort to fulfill this requirement. Open source products provide transparency to the actual users and therefore supports growing thrust amongst customers.
 
 \section{Common characteristics between payment terminals}
+\label{section:payment terminals}
 
 When designing automated test environment for different kinds of payment terminals, different physical and technical features have to be taken into account. Environment has to be able to manipulate different types of payment terminals and test structure has to be designed to adapt to needs of different software and software versions running on payment terminals.
 
@@ -55,6 +56,9 @@ Location of the chip card slot is usually on the lover edge of the payment termi
 \end{figure}
 
 \section{Different approaches for test automation}
+\label{section:test automation approaches}
+
+According to \emph{\cite{broekman2003testing}}, testing of embedded systems and embedded system software can be very different depending on what kind of system is under testing. Mobile phones have to be tested in a very different manner than for example cruise control system in cars. Some general guidelines and divisions nevertheless exists and should be followed.
 
 Problem of testing the payment terminal software in automated way can be viewed at different levels. Most abstract division can be seen if the testing is divided into two levels: white box testing and black box testing. White box testing is a method where source code is investigated and test cases are written to test the internal logic of the program. Black box testing on the other hand concentrates only on the inputs and the outputs of the software. Everything between those is not in a field of interest and black box testing only focuses on whether the right input produces the wanted output. (\emph{\cite{myers2011art}})
 
@@ -64,9 +68,12 @@ Problem of testing the payment terminal software in automated way can be viewed 
 
 As black box testing is based only to the external exceptions and behavior of the software (\emph{\cite{khan2012comparative}}), acceptance testing of the payment terminal software can be seen to follow this methodology. Intended automated testing of the payment terminals seems to also follow the acceptance testing phase of the division made by \emph{\cite{khan2012comparative}}.
 
+\emph{\cite{Ramler}} divides the general architecture of an embedded system into three parts. In this devision the human machine interface (HMI) is the top layer. This is followed by the software running on the device and the lowest level are the hardware components of the machine which can be accessed through different analog and digital interfaces. As this Master's Thesis addresses only to the acceptance testing of one instance of an embedded system and it only has to verify whether the system fulfills its acceptance testing requirements, these abstraction levels can be overlooked. Also for this purpose the black box testing technique seems to be the appropriate testing manner.
+
 Acceptance testing of a payment terminal software can be seen as a testing phase where the UI of the device and the use cases of the device are tested at the final production level, i.e. through using the real buttons of the device under test and observing that the expected messages can be seen through the screen of the device under test. This can be seen as an effort to automate real human user using the payment terminal.
 
 \section{Test suite syntax}
+\label{section:test suite syntax}
 
 Test suite syntax plays significant role in automated acceptance testing environment of payment terminals in terms of test readability, reusability and adaptivity. When building automated acceptance testing environment, the tests should be understandable enough that whole development team and people related to the project can easily adopt the test syntax.
 

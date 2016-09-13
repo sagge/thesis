@@ -5,7 +5,7 @@
 
 This chapter will cover the subsystems and steps taken that were needed to achieve the testing environment described in Chapter~\ref{chapter:Proposed architecture}. This chapter will first discuss the arrangements related to the hardware of the framework and then software related arrangements will be presented and described. After presenting the built framework, achieved results will be discussed and finally the test environment presented in this Thesis will be evaluated.
 
-\section{Hardware arrangements}
+\section{Hardware Arrangements}
 \label{section:Hardware arrangements}
 
 AAT environment presented in this Master's Thesis consists of several different hardware components. Environment had to be a smooth combination of manipulation and computing hardware and hardware architecture is thought to be modular in a sense that every component has a specific functionality. This allows easy maintenance and upgrade of each subsystem.
@@ -45,12 +45,12 @@ Section \ref{subsection:The Robot proposal} suggested equipping the robot with a
 \end{figure}
 \FloatBarrier
 
-\subsection{Computing hardware}
+\subsection{Computing Hardware}
 \label{subsection:Computing hardware}
 
 Raspberry Pi 2 Model B single-board computer is used as a main computer of the AAT environment. Raspberry Pi provides optimal computing power compared to it's price and has big community of users and developers world wide. 3D printed enclosure was manufactured to protect the computer board and it was attached to the moving Z-axis assembly of the robot.
 
-In addition to the Raspberry Pi 2, the robot also has two Arduino Uno boards for handling some specific functionalities of the AAT environment. One Arduino Uno is interpreting the G-code commands sent from the Raspberry Pi and it is connected to the stepper motors of the robot through a stepper motor driver shield\footnote{\url{http://www.shapeoko.com/wiki/index.php/GrblShield/}}.
+In addition to the Raspberry Pi 2, the robot also has two Arduino Uno boards for handling some specific functionalities of the AAT environment. One Arduino Uno is interpreting the G-code commands sent from the Raspberry Pi and it is connected to the stepper motors of the robot through a stepper motor driver shield (\emph{\cite{grbl_shield}}).
 
 Second Arduino Uno is handling the servo motor control of the card feeders. It is connected to the Raspberry Pi via USB connection and control commands to Arduino Uno are sent using serial communication. Arduino Uno board provides PWM signal to the servo motors and can accommodate three card feeders at the same time. Self-made circuit board was fabricated and attached on top of the Arduino Uno board in order to make connecting the servo motor cables easy.
 
@@ -65,10 +65,10 @@ Connection diagram and main electronic components are visualized in Figure \ref{
 \end{figure}
 \FloatBarrier
 
-\subsection{Camera arrangements}
+\subsection{Camera Arrangements}
 \label{subsection:Camera Arrangements}
 
-As suggested in Section \ref{section:Proposed hardware}, Raspberry Pi's own camera module was used for machine vision hardware. Camera was attached to the bottom of the Raspberry Pi's enclosure and the enclosure was attached to the Z-axis assembly of the robot to the opposite side where the pushing tool is. Camera can be moved within the X- and Y-axis. Z-axis movement of the camera isn't possible. Depth of focus of the camera provides clear image of the screen even when the distance between the lens and the screen differs slightly between different payment terminal models. Camera attachment can be seen in Figure \ref{fig:camera}.
+As suggested in Section \ref{subsection:computer vision hardware}, Raspberry Pi's own camera module was used for machine vision hardware. Camera was attached to the bottom of the Raspberry Pi's enclosure and the enclosure was attached to the Z-axis assembly of the robot to the opposite side where the pushing tool is. Camera can be moved within the X- and Y-axis. Z-axis movement of the camera isn't possible. Depth of focus of the camera provides clear image of the screen even when the distance between the lens and the screen differs slightly between different payment terminal models. Camera attachment can be seen in Figure \ref{fig:camera}.
 
 \begin{figure}[ht]
   \begin{center}
@@ -80,7 +80,7 @@ As suggested in Section \ref{section:Proposed hardware}, Raspberry Pi's own came
 \FloatBarrier
 
 
-\subsection{Card feeder arrangements}
+\subsection{Card Feeder Arrangements}
 \label{subsection:Card feeder arrangements}
 
 As suggested in Section \ref{subsection:Card feeder}, card feeder structures were 3D printed using PLA plastic. Finalized card feeders consisted of bottom plate, payment card holder and servo motor. Servo motor attaches directly to the bottom plate and card holder attaches to the arm of the servo motor.
@@ -104,7 +104,7 @@ Simplistic design can be used with different kinds of payment terminals which ha
 \end{figure}
 \FloatBarrier
 
-\section{Software arrangements}
+\section{Software Arrangements}
 \label{section:Software arrangements}
 
 As proposed in Section \ref{section:software}, this chapter will describe decisions and arrangements regarding to the software point of view of the AAT environment. Proposal was followed rather loyally though some additional arrangements had to be implemented to the environment in order to increase usability and effectiveness.
@@ -113,16 +113,32 @@ Modular architecture was implemented also to the software level similar to the h
 
 This section describes the individual software components of the AAT environment and their usage and function in the whole system. System configuration, test framework and libraries and the final test suite syntax will be presented.
 
-\subsection{Software architecture}
+\subsection{Software Architecture}
 \label{subsection:Software architecture}
 
 Suggested already in the Section \ref{section:software}, Raspbian Wheesy Debian-based operating system was used with the Rasbperry Pi 2 Model B single-board computer. Operating system was used to run the test framework, test libraries and other software components and to handle the communication with different subsystems of the AAT environment.
 
-Robot Framework was used as a test framework for its modularity, simplicity and versatility. RF was run on top of Python runtime environment and all test libraries were written using Python programming language\footnote{https://www.python.org/}. Python test libraries were implemented to handle the needed serial communication to the Arduino board on ShapeOko 2 and to the other Arduino board used for controlling the card feeder servo motors. Picamera\footnote{http://picamera.readthedocs.io/en/release-1.12/} Python library was used for providing the needed Python interface for communication with the Raspberry Pi camera module.
+Robot Framework was used as a test framework for its modularity, simplicity and versatility. RF was run on top of Python runtime environment and all test libraries were written using Python programming language (\emph{\cite{python}}). Python test libraries were implemented to handle the needed serial communication to the Arduino board on ShapeOko 2 and to the other Arduino board used for controlling the card feeder servo motors. Picamera Python library was used for providing the needed Python interface for communication with the Raspberry Pi camera module (\emph{\cite{picamera}}). Overall visualization of the software architecture can be observed in Figure \ref{fig:software_architecture}.
 
-As different keyboard layouts have to be supported, configuration files for keyboard layouts were implemented. There are two types of configuration files: one for device locations in the working area of the robot and one for each keyboard layout. In this way configuration of devices under test can be easily modified at the test case level.
+As different keyboard layouts have to be supported, configuration files for keyboard layouts were implemented. There are two types of configuration files: one for device locations in the working area of the robot and one for each keyboard layout. In this way configuration of devices under test can be easily modified at the test case level. Examples of these configuration files can be observed in Figure \ref{fig:conf1} and in Figure \ref{fig:conf2}.
 
-Overall visualization of the software architecture can be observed in Figure \ref{fig:software_architecture}.
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=\textwidth]{images/conf1.png}
+    \caption{Configuration file for device locations in the working area of the robot.}
+    \label{fig:conf1}
+  \end{center}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=11	cm]{images/conf2.png}
+    \caption{Example of a configuration file of a device keyboard layout.}
+    \label{fig:conf2}
+  \end{center}
+\end{figure}
+\FloatBarrier
 
 \begin{figure}[ht]
   \begin{center}
@@ -133,17 +149,41 @@ Overall visualization of the software architecture can be observed in Figure \re
 \end{figure}
 \FloatBarrier
 
-\subsection{Robot Framework and libraries}
+\subsection{Robot Framework Test Framework}
 \label{subsection:Robot Framework and libraries}
 
-\subsection{Computer vision arrangements}
-\label{subsection:Computer vision arrangements}
+\subsection{Robot Control and Card Feeder Libraries}
+\label{subsection:libraries}
 
-\subsection{Test syntax}
+\subsection{Card Feeder Software}
+\label{subsection:card feeder software}
+
+\subsection{Computer Vision Library}
+\label{subsection:Computer vision library}
+
+\subsection{Test Syntax}
 \label{subsection:Test syntax}
 
-\subsection{Test result syntax}
+\subsection{Test Result Syntax}
 \label{subsection:Test result syntax}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{images/passed_report.png}
+    \caption{Report of passed tests.}
+    \label{fig:software_architecture}
+  \end{center}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{images/failed_report.png}
+    \caption{Report of failed tests.}
+    \label{fig:software_architecture}
+  \end{center}
+\end{figure}
+\FloatBarrier
 
 
 \section{Results}
