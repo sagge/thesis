@@ -8,7 +8,7 @@ This chapter will cover the subsystems and steps taken that were needed to achie
 \section{Hardware Arrangements}
 \label{section:Hardware arrangements}
 
-AAT environment presented in this Master's Thesis consists of several different hardware components. Environment had to be a smooth combination of manipulation and computing hardware and hardware architecture is thought to be modular in a sense that every component has a specific functionality. This allows easy maintenance and upgrade of each subsystem.
+AAT environment presented in this master's thesis consists of several different hardware components. Environment had to be a smooth combination of manipulation and computing hardware and hardware architecture is thought to be modular in a sense that every component has a specific functionality. This allows easy maintenance and upgrade of each subsystem.
 
 As stated in Chapter~\ref{chapter:Proposed architecture}, one of the requirements for this AAT environment was affordable price. For this reason hardware decisions have been made taking quality-price ratio into consideration and hobby-grade electronics were used widely through out the environment. 3D printing was also utilized as a manufacturing technique of custom made components for its relatively low manufacturing price and relatively acceptable quality of outputted plastic parts.
 
@@ -156,9 +156,9 @@ By dividing the configuration files into different levels enables easy modificat
 \subsection{Robot Framework Test Framework}
 \label{subsection:Robot Framework and libraries}
 
-As proposed in Section \ref{subsection:test framework}, Robot Framework was used as a test framework for AAT environment presented in this Master's Thesis. RF was equipped with several different test libraries to achieve the desired functionality of the AAT environment.
+As proposed in Section \ref{subsection:test framework}, Robot Framework was used as a test framework for AAT environment presented in this master's thesis. RF was equipped with several different test libraries to achieve the desired functionality of the AAT environment.
 
-RF is a generic keyword driven test framework and this means that the keywords used for different test steps can be defined in desired level of abstraction, lowest being that one keyword would handle only one library method and highest being that one keyword would be responsible of whole test case. This allows high versatility but also makes the developer responsible of writing test cases according to commonly accepted best practices. Test cases developed in the scope of this Master's thesis were developed to be as human readable as possible and to mimic the mindset of human when dividing the test cases into steps. This naturally depends of the person that is thinking the test steps but it was attempted to make the devision between each test steps as clear as possible.
+RF is a generic keyword driven test framework and this means that the keywords used for different test steps can be defined in desired level of abstraction, lowest being that one keyword would handle only one library method and highest being that one keyword would be responsible of whole test case. This allows high versatility but also makes the developer responsible of writing test cases according to commonly accepted best practices. Test cases developed in the scope of this master's thesis were developed to be as human readable as possible and to mimic the mindset of human when dividing the test cases into steps. This naturally depends of the person that is thinking the test steps but it was attempted to make the devision between each test steps as clear as possible.
 
 Test cases and steps were also divided into different keywords in a sense of reusability. According to \emph{\cite{clean-code}} any code written should be as readable and understandable as possible and these directions were used as guidelines when the test cases were implemented. \emph{\cite{clean-code}} also advices that code should be written in highly modular manner and this was followed when the keywords were combined in different abstraction levels.
 
@@ -166,7 +166,7 @@ Keywords used in test cases were defined in three different levels: test library
 
 AAT environment also introduced a resource file for combining the keywords that were shared with different test suites. Abstraction level of keywords found from this file can be qualified as middle or high level. Resource file is also used for defining common test libraries between test suites and common set-up and tear-down commands of test cases and suites. Resource file is imported to each test suite file. Example of partial resource file can be seen in Figure \ref{fig:resource}
 
-Based on the work done in this Master's Thesis, open source RF library was published (\emph{\cite{cnc-library}}). This library can be used for easy controlling of devices that use serial communication as a communication protocol and are controlled using G-code commands. library is intended for use in similar circumstances described in this Master's Thesis but can also be used as general G-code control library for Robot Framework.
+Based on the work done in this master's thesis, open source RF library was published (\emph{\cite{cnc-library}}). This library can be used for easy controlling of devices that use serial communication as a communication protocol and are controlled using G-code commands. library is intended for use in similar circumstances described in this master's thesis but can also be used as general G-code control library for Robot Framework.
 
 \begin{figure}[ht]
   \begin{center}
