@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.5)  13 SEP 2016 01:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.5)  14 SEP 2016 00:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1357,34 +1357,43 @@ File: images/resource.png Graphic file (type png)
 <use images/resource.png>
 Package pdftex.def Info: images/resource.png used on input line 173.
 (pdftex.def)             Requested size: 341.43306pt x 242.9438pt.
- [35 <./images/resource.png>] [36]
-<images/passed_report.png, id=622, 869.2475pt x 657.45625pt>
+ [35 <./images/resource.png>] [36] [37]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 216.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 216.
+ [38] [39]
+<images/passed_report.png, id=641, 869.2475pt x 657.45625pt>
 File: images/passed_report.png Graphic file (type png)
 
 <use images/passed_report.png>
-Package pdftex.def Info: images/passed_report.png used on input line 215.
+Package pdftex.def Info: images/passed_report.png used on input line 237.
 (pdftex.def)             Requested size: 312.00119pt x 235.98183pt.
 
-<images/failed_report.png, id=623, 868.24374pt x 655.44875pt>
+<images/failed_report.png, id=642, 860.71562pt x 751.80875pt>
 File: images/failed_report.png Graphic file (type png)
 
 <use images/failed_report.png>
-Package pdftex.def Info: images/failed_report.png used on input line 224.
-(pdftex.def)             Requested size: 312.00119pt x 235.53131pt.
- [37 <./images/passed_report.png>])
-(./5discussion.tex [38 <./images/failed_report.png>]
+Package pdftex.def Info: images/failed_report.png used on input line 246.
+(pdftex.def)             Requested size: 312.00119pt x 272.52081pt.
+ [40 <./images/passed_report.png>])
+(./5discussion.tex [41 <./images/failed_report.png>]
 Chapter 5.
-) (./6conclusions.tex [39
+) (./6conclusions.tex [42
 
 ]
 Chapter 6.
-) (./thesis.bbl [40
+) (./thesis.bbl [43
 
-] [41
+] [44
 
-] [42] [43]) (./appendices.tex [44]
+] [45] [46]) (./appendices.tex [47]
 Appendix A.
-<images/smoke_test_log.pdf, id=698, 597.50786pt x 845.04686pt>
+<images/smoke_test_log.pdf, id=714, 597.50786pt x 845.04686pt>
 File: images/smoke_test_log.pdf Graphic file (type pdf)
 
 <use images/smoke_test_log.pdf>
@@ -1395,7 +1404,7 @@ File: images/smoke_test_log.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/smoke_test_log.pdf used on input line 13.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 
-<images/smoke_test_log.pdf, id=701, page=1, 597.50786pt x 845.04686pt>
+<images/smoke_test_log.pdf, id=717, page=1, 597.50786pt x 845.04686pt>
 File: images/smoke_test_log.pdf Graphic file (type pdf)
 
 <use images/smoke_test_log.pdf, page 1>
@@ -1420,10 +1429,10 @@ File: images/smoke_test_log.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/smoke_test_log.pdf, page1 used on input line 13
 .
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [45
+ [48
 
 ]
-<images/smoke_test_log.pdf, id=706, page=2, 597.50786pt x 845.04686pt>
+<images/smoke_test_log.pdf, id=723, page=2, 597.50786pt x 845.04686pt>
 File: images/smoke_test_log.pdf Graphic file (type pdf)
 
 <use images/smoke_test_log.pdf, page 2>
@@ -1442,14 +1451,14 @@ File: images/smoke_test_log.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/smoke_test_log.pdf, page1 used on input line 13
 .
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [46 <./images/smoke_test_log.pdf>]
+ [49 <./images/smoke_test_log.pdf>]
 File: images/smoke_test_log.pdf Graphic file (type pdf)
 
 <use images/smoke_test_log.pdf, page 2>
 Package pdftex.def Info: images/smoke_test_log.pdf, page2 used on input line 13
 .
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [47 <./images/smoke_test_log.pdf>])
+ [50 <./images/smoke_test_log.pdf>])
 
 Package todo Warning: Nothing \todo! I'm ignoring the \todos command on input l
 ine 541.
@@ -1462,13 +1471,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 550.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 550.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4FDD2F591414FA2C1C26284972770A07;2674.
+(rerunfilecheck)             Checksum: EDFD2DF83CD7579D43E76F99EE44EE7F;2668.
  ) 
 Here is how much of TeX's memory you used:
- 22397 strings out of 493089
- 437132 string characters out of 6134843
- 540510 words of memory out of 5000000
- 25207 multiletter control sequences out of 15000+600000
+ 22419 strings out of 493089
+ 437495 string characters out of 6134843
+ 540504 words of memory out of 5000000
+ 25223 multiletter control sequences out of 15000+600000
  12651 words of font info for 48 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  55i,18n,67p,1097b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1476,13 +1485,14 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on thesis.pdf (54 pages, 2732997 bytes).
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
+Output written on thesis.pdf (57 pages, 2794280 bytes).
 PDF statistics:
- 855 PDF objects out of 1000 (max. 8388607)
- 711 compressed objects within 8 object streams
- 155 named destinations out of 1000 (max. 500000)
+ 876 PDF objects out of 1000 (max. 8388607)
+ 729 compressed objects within 8 object streams
+ 158 named destinations out of 1000 (max. 500000)
  452 words of extra memory for PDF output out of 10000 (max. 10000000)
 

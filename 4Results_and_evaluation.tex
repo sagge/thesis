@@ -180,7 +180,13 @@ Based on the work done in this Master's Thesis, open source RF library was publi
 \subsection{Robot Control and Card Feeder Libraries}
 \label{subsection:libraries}
 
+For sending the control commands to the ShapeOko 2 robot with Robot Framework, robot control library was implemented using Python language. Control commands for the robot robot are given using G-code commands and those are being sent using serial communication protocol. Library defines keywords that can be used withing the keyword definitions and test cases of the RF acceptance tests.
 
+Desired G-code commands are produces in respect to the configuration files described in Section \ref{subsection:Software architecture}. Library reads the coordinates of the devices and different buttons and by combining these forms the needed G-code command to drive the robot into particular location. Library has \emph{go\_to()} -method which takes the button name as parameter to drive the robot into desired position. \emph{press\_button()} -method is used to press the button when to robot is reached the desired position on top of the button.
+
+Library also has methods for setting the home position which is used in the initialization of the library after it has been imported into RF test. Library also implements methods for going into home position, going to the right position for image capture in respect of the device under test and individual methods for lovering and raising the pushing tool of the robot. These can be used as a keywords within the test cases.
+
+For controlling the card feeder another test library was also implemented using Python language. Control command for card feeder Arduino board are being sent using serial communication and library takes care of this interaction between the RF and the Arduino board. Card feeder library only implements \emph{update()} -method that takes the angle and the card feeder number as parameters. This method sends the control command to the Arduino board of the card feeders and can be used as a keyword within the RF keywords or test cases.
 
 \subsection{Card Feeder Software}
 \label{subsection:card feeder software}
@@ -203,12 +209,28 @@ Computer vision library outputs all found textual features from the source image
 \subsection{Test Syntax}
 \label{subsection:Test syntax}
 
-Example test case can be seen in Figure \ref{fig:invalid_pin_test}.
+Robot Framework files are divided into different parts that all have specific functionality and purpose. This helps to observe the different configurations and used keywords within the test suite in order to gain comprehension of the functionality of the particular file. As mentioned earlier, the project structure is divided into shared resource file and individual test suite files. Same syntax applies to both kinds of files, only the scope of the definitions changes according to the type of the file. Resource file is divided into three sections: settings, variables and keywords. Test suite files are divided into four sections: settings, variables, test cases and keywords.
 
-\subsection{Test Result Syntax}
+Settings section of the file define all the needed settings for executing the test cases. This includes all resource and library imports and test setup and teardown definitions. In this project all the library imports are done within the resource file and the resource file is imported to the test suites in the settings section of the test suite files. Test teaedowns are also defined at test suite level.
+
+Variables section defines all the used variables within the test cases. Variables section of the resource file are used for defining used directory paths for e.g. location of the image directory used by the computer vision and location of the configuration files of the device location configuration file and configuration files of different keyboard layouts of the payment terminals. Variables are defined using \emph{\$\{variable\}} annotation.
+
+Test cases section of the test suite files are used for defining all the test cases within the test suite and test steps of the test cases. Test cases are defined by naming them in the firs line and then defining the test steps by indenting the names of the used keywords with at least two space characters under the name of the test case.
+    
+Keywords are defined in the same way as test cases. Each keyword definition begins with the name of the keyword followed by indented names of used lower level keywords or library methods. Keywords can be built modularly into different layers by using lower lever keywords in higher level keyword definitions.
+
+Example test case can be seen in Figure \ref{fig:invalid_pin_test} as proposed test case syntax was followed.
+
+\subsection{Test Results}
 \label{subsection:Test result syntax}
 
+For the testing to be actually useful and informative, clear test reports and error descriptions has to be generated. Robot Framework is useful for this purpose as it automatically generates two types of clear and easily understandable test result files after executing the test suite under examination. These files are outputted in \emph{.html} format making it able examine the reports interactively using web browser.
 
+\emph{report.html} file can be user to review the overall status of executed test suites and cases. This report gives overall view to the testing project and different outcomes of the tests are marked in bright colors green representing passed test and red representing failed test. Example of passed test report file can be seen in Figure \ref{fig:passed report} and example of failed test report can be seen in Figure \ref{fig:passed report}.
+
+\emph{log.html} file contains more detailed representation of the test cases. Each test step is shown here and the internal keywords and library methods used by the keyword are layered under each test step. If test step fails during the test execution, the stack trace of that particular command is added to the log file and can be easily observed. Example of log file can be seen in Appendix \ref{chapter:first-appendix}.
+
+Robot Frameworks also allows setting up threshold limits for test suites that are used to determine whether the test suite is passed or failed. For example, the threshold can be set to 90 \% and if over 90 \% of test cases within the test suite are passed, the test suite is being considered passed. Test cases can also be marked as critical meaning that if those particular test cases fail, the test suite is never considered as passed.
 
 \begin{figure}[ht]
   \begin{center}

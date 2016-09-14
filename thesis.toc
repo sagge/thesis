@@ -32,11 +32,11 @@
 \contentsline {subsection}{\numberline {4.2.1}Software Architecture}{31}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Robot Framework Test Framework}{34}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Robot Control and Card Feeder Libraries}{35}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Card Feeder Software}{35}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Computer Vision Library}{36}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Test Syntax}{37}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Test Result Syntax}{37}{subsection.4.2.7}
-\contentsline {chapter}{\numberline {5}Discussion}{39}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions}{40}{chapter.6}
-\contentsline {chapter}{Bibliography}{41}{chapter*.4}
-\contentsline {chapter}{\numberline {A}First appendix}{45}{appendix.A}
+\contentsline {subsection}{\numberline {4.2.4}Card Feeder Software}{36}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Computer Vision Library}{37}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Test Syntax}{38}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Test Results}{39}{subsection.4.2.7}
+\contentsline {chapter}{\numberline {5}Discussion}{42}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{43}{chapter.6}
+\contentsline {chapter}{Bibliography}{44}{chapter*.4}
+\contentsline {chapter}{\numberline {A}First appendix}{48}{appendix.A}
