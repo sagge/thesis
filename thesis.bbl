@@ -10,37 +10,38 @@ James Bach.
 \newblock Test automation snake oil.
 \newblock \emph{Windows Tech Journal}, 10, 1996.
 
-\bibitem[{BCN3D-Moveo}()]{bcn3d}
+\bibitem[{BCN3D-Moveo}(n.d.)]{bcn3d}
 {BCN3D-Moveo}.
-\newblock URL \url{https://github.com/BCN3D/BCN3D-Moveo} Accessed 5.9.2016.
+\newblock URL \url{https://github.com/BCN3D/BCN3D-Moveo} Accessed 5.9.2016,
+  n.d.
 
 \bibitem[Broekman and Notenboom(2003)]{broekman2003testing}
 Bart Broekman and Edwin Notenboom.
 \newblock \emph{Testing embedded software}.
 \newblock Pearson Education, 2003.
 
-\bibitem[Cucumber()]{cucumber}
+\bibitem[Cucumber(n.d.)]{cucumber}
 Cucumber.
-\newblock URL \url{https://cucumber.io/} Accessed 7.9.2016.
+\newblock URL \url{https://cucumber.io/} Accessed 7.9.2016, n.d.
 
 \bibitem[Ebert and Jones(2009)]{ebert2009embedded}
 Christof Ebert and Capers Jones.
 \newblock Embedded software: Facts, figures, and future.
 \newblock \emph{Computer}, \penalty0 (4):\penalty0 42--52, 2009.
 
-\bibitem[Gherkin()]{gherkin}
+\bibitem[Gherkin(n.d.)]{gherkin}
 Gherkin.
 \newblock URL \url{https://github.com/cucumber/cucumber/wiki/Gherkin} Accessed
-  7.9.2016.
+  7.9.2016, n.d.
 
-\bibitem[{GRBL}()]{grbl}
+\bibitem[{GRBL}(n.d.)]{grbl}
 {GRBL}.
-\newblock URL \url{https://github.com/grbl/grbl} Accessed 15.7.2016.
+\newblock URL \url{https://github.com/grbl/grbl} Accessed 15.7.2016, n.d.
 
-\bibitem[{grblShield}()]{grbl_shield}
+\bibitem[{grblShield}(n.d.)]{grbl_shield}
 {grblShield}.
 \newblock URL \url{https://www.synthetos.com/project/grblshield/} Accessed
-  1.9.2016.
+  1.9.2016, n.d.
 
 \bibitem[Haugset and Hanssen(2008)]{haugset2008automated}
 Borge Haugset and Geir~Kjetil Hanssen.
@@ -55,9 +56,9 @@ Dorota Huizinga and Adam Kolawa.
   management}.
 \newblock John Wiley \& Sons, 2007.
 
-\bibitem[JUnit()]{junit}
+\bibitem[JUnit(n.d.)]{junit}
 JUnit.
-\newblock URL \url{http://junit.org/} Accessed 7.9.2016.
+\newblock URL \url{http://junit.org/} Accessed 7.9.2016, n.d.
 
 \bibitem[Khan and Khan(2012)]{khan2012comparative}
 Mohd~Ehmer Khan and Farmeena Khan.
@@ -106,9 +107,9 @@ G.J. Myers, C.~Sandler, and T.~Badgett.
   \url{http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html/}.
   Accessed 6.5.2016.
 
-\bibitem[{OpenCV}()]{opencv}
+\bibitem[{OpenCV}(n.d.)]{opencv}
 {OpenCV}.
-\newblock URL \url{http://opencv.org/} Accessed 18.7.2016.
+\newblock URL \url{http://opencv.org/} Accessed 18.7.2016, n.d.
 
 \bibitem[Paulson et~al.(2004)Paulson, Succi, and
   Eberlein]{paulson2004empirical}
@@ -118,10 +119,10 @@ James~W Paulson, Giancarlo Succi, and Armin Eberlein.
 \newblock \emph{Software Engineering, IEEE Transactions on}, 30\penalty0
   (4):\penalty0 246--256, 2004.
 
-\bibitem[{Picamera}()]{picamera}
+\bibitem[{Picamera}(n.d.)]{picamera}
 {Picamera}.
 \newblock URL \url{http://picamera.readthedocs.io/en/release-1.12/} Accessed
-  7.9.2016.
+  7.9.2016, n.d.
 
 \bibitem[Pressman(2005)]{pressman2005software}
 R.S. Pressman.
@@ -130,17 +131,18 @@ R.S. Pressman.
 \newblock ISBN 9780073019338.
 \newblock URL \url{https://books.google.com/books?id=bL7QZHtWvaUC}.
 
-\bibitem[{pySerial}()]{pyserial}
+\bibitem[{pySerial}(n.d.)]{pyserial}
 {pySerial}.
-\newblock URL \url{http://pythonhosted.org/pyserial/} Accessed 4.5.2016.
+\newblock URL \url{http://pythonhosted.org/pyserial/} Accessed 4.5.2016, n.d.
 
-\bibitem[{Pytesseract}()]{pytesseract}
+\bibitem[{Pytesseract}(n.d.)]{pytesseract}
 {Pytesseract}.
-\newblock URL \url{https://pypi.python.org/pypi/pytesseract} Accessed 4.5.2016.
+\newblock URL \url{https://pypi.python.org/pypi/pytesseract} Accessed 4.5.2016,
+  n.d.
 
-\bibitem[{Python}()]{python}
+\bibitem[{Python}(n.d.)]{python}
 {Python}.
-\newblock URL \url{https://www.python.org/} Accessed 7.9.2016.
+\newblock URL \url{https://www.python.org/} Accessed 7.9.2016, n.d.
 
 \bibitem[Ramler et~al.(2014)Ramler, Putsch\"{o}gl, and Winkler]{Ramler}
 Rudolf Ramler, Werner Putsch\"{o}gl, and Dietmar Winkler.
@@ -153,39 +155,40 @@ Rudolf Ramler, Werner Putsch\"{o}gl, and Dietmar Winkler.
 \newblock \doi{10.1145/2593783.2593788}.
 \newblock URL \url{http://doi.acm.org/10.1145/2593783.2593788}.
 
-\bibitem[{Raspberry Pi 2}()]{raspberry}
+\bibitem[{Raspberry Pi 2}(n.d.)]{raspberry}
 {Raspberry Pi 2}.
 \newblock URL
   \url{https://www.raspberrypi.org/products/raspberry-pi-2-model-b/} Accessed
-  1.6.2016.
+  1.6.2016, n.d.
 
-\bibitem[{Raspberry Pi Camera Module}()]{raspberry_camera}
+\bibitem[{Raspberry Pi Camera Module}(n.d.)]{raspberry_camera}
 {Raspberry Pi Camera Module}.
 \newblock URL \url{https://www.raspberrypi.org/products/camera-module/}
-  Accessed 1.6.2016.
+  Accessed 1.6.2016, n.d.
 
-\bibitem[{Raspbian}()]{raspbian}
+\bibitem[{Raspbian}(n.d.)]{raspbian}
 {Raspbian}.
 \newblock URL \url{https://www.raspberrypi.org/downloads/raspbian/} Accessed
-  4.5.2016.
+  4.5.2016, n.d.
 
-\bibitem[{Robot Framework}()]{robotframework}
+\bibitem[{Robot Framework}(n.d.)]{robotframework}
 {Robot Framework}.
-\newblock URL \url{http://robotframework.org/} Accessed 1.6.2016.
+\newblock URL \url{http://robotframework.org/} Accessed 1.6.2016, n.d.
 
-\bibitem[{Robot Framework CNC Library}()]{cnc-library}
+\bibitem[{Robot Framework CNC Library}(n.d.)]{cnc-library}
 {Robot Framework CNC Library}.
 \newblock URL \url{https://github.com/Eficode/robotframework-cnclibrary}
-  Accessed 1.8.2016.
+  Accessed 1.8.2016, n.d.
 
-\bibitem[{ShapeOko 2}()]{shapeoko}
+\bibitem[{ShapeOko 2}(n.d.)]{shapeoko}
 {ShapeOko 2}.
 \newblock URL \url{http://www.shapeoko.com/wiki/index.php/ShapeOko_2} Accessed
-  1.6.2016.
+  1.6.2016, n.d.
 
-\bibitem[{ShapeOko 2 Github}()]{shapeoko_git}
+\bibitem[{ShapeOko 2 Github}(n.d.)]{shapeoko_git}
 {ShapeOko 2 Github}.
-\newblock URL \url{https://github.com/shapeoko/Shapeoko_2} Accessed 15.7.2016.
+\newblock URL \url{https://github.com/shapeoko/Shapeoko_2} Accessed 15.7.2016,
+  n.d.
 
 \bibitem[Sommerville(2011)]{sommerville2011software}
 I.~Sommerville.
@@ -200,9 +203,9 @@ Stanislav Stresnjak and Zeljko Hocenski.
 \newblock In \emph{ICSEA 2011 The Sixth International Conference on Software
   Engineering Advances}, 2011.
 
-\bibitem[{Tesseract OCR}()]{tesseract}
+\bibitem[{Tesseract OCR}(n.d.)]{tesseract}
 {Tesseract OCR}.
 \newblock URL \url{https://github.com/tesseract-ocr/tesseract} Accessed
-  4.5.2016.
+  4.5.2016, n.d.
 
 \end{thebibliography}

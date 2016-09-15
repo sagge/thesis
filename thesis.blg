@@ -3,56 +3,37 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: plainnat.bst
 Database file #1: sources.bib
-Warning--empty year in bcn3d
-Warning--empty year in cucumber
 Warning--there's a number but no volume in ebert2009embedded
-Warning--empty year in gherkin
-Warning--empty year in grbl
-Warning--empty year in grbl_shield
-Warning--empty year in junit
-Warning--empty year in opencv
-Warning--empty year in picamera
-Warning--empty year in pyserial
-Warning--empty year in pytesseract
-Warning--empty year in python
-Warning--empty year in raspberry
-Warning--empty year in raspberry_camera
-Warning--empty year in raspbian
-Warning--empty year in robotframework
-Warning--empty year in cnc-library
-Warning--empty year in shapeoko
-Warning--empty year in shapeoko_git
-Warning--empty year in tesseract
 You've used 36 entries,
             2773 wiz_defined-function locations,
-            764 strings with 9518 characters,
-and the built_in function-call counts, 12599 in all, are:
-= -- 1115
+            765 strings with 9522 characters,
+and the built_in function-call counts, 12618 in all, are:
+= -- 1134
 > -- 519
 < -- 37
 + -- 189
 - -- 153
 * -- 738
-:= -- 1910
+:= -- 1929
 add.period$ -- 111
 call.type$ -- 36
 change.case$ -- 133
 chr.to.int$ -- 36
-cite$ -- 92
+cite$ -- 73
 duplicate$ -- 668
 empty$ -- 1249
 format.name$ -- 207
-if$ -- 2728
+if$ -- 2747
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 23
 newline$ -- 182
 num.names$ -- 144
-pop$ -- 445
+pop$ -- 407
 preamble$ -- 1
 purify$ -- 123
 quote$ -- 0
-skip$ -- 531
+skip$ -- 550
 stack$ -- 0
 substring$ -- 223
 swap$ -- 68
@@ -60,8 +41,8 @@ text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 361
-warning$ -- 20
+warning$ -- 1
 while$ -- 124
 width$ -- 0
-write$ -- 427
-(There were 20 warnings)
+write$ -- 446
+(There was 1 warning)
