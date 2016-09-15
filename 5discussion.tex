@@ -3,9 +3,37 @@
 \chapter{Discussion}
 \label{chapter:discussion}
 
-At this point, you will have some insightful thoughts on your implementation
-and you may have ideas on what could be done in the future. 
-This chapter is a good place to discuss your thesis as a whole and to show your
-professor that you have really understood some non-trivial aspects of the
-methods you used\ldots
+This chapter will discuss the research questions based on the proposal and implementation made in previous chapters of this master's thesis. Possible future research topics around the subject matter of this thesis are presented related to the research questions.
+
+\section{Benefits of Open Source}
+
+Even though open source definition of a software does not guarantee the quality and excellence of the product compared to the closed source counterparts, the usage of open source solutions was beneficial for this project. As overall budget of the project was set rather low, open source products provided advantage over proprietary solutions.
+
+Use of open source software provided possibility to evaluate the possible tools more throughly before actually taking them into the project. This was especially beneficial in terms of efficiently evaluating the potential tools and keeping the development time frame short. 
+
+Use of open source products also provided positive image to the customer organization whom the project was developed for. As the system under testing had strict security requirements, open source solutions provided visibility and transparency to the users and developers of the tested product.
+
+Comparison between open source and proprietary products can be done in numerous different aspects and research done within this master's thesis was restricted due to time and cost limitations of the project. Future research could address to this comparison more thoroughly by comparing AAT environments developed strictly with different kinds of tools.
+
+\section{Characteristics of Payment Terminals}
+
+Different types of payment terminals were examined within this master's thesis and it was found out that due to the simple function of the payment terminal, the design usually involves few common parts: a display, a keypad and some sort of a card slot.
+
+Scope of the master's thesis was limited to certain types of payment terminals and more exotic models were left out of consideration. Developed environment only supports payment terminals using chip card slot for inserting the payment card and use of other reading methods of the payment card, e.g. magnetic stripe reading, is not supported.
+
+For the future work, possibility to support other reading methods of the payment card is suggested to being researched.
+
+\section{Approaches for Test Automation}
+
+Black box testing was used as a testing method within the word done in this master's thesis. Choice of the method was done entirely based on the definitions and divisions found from the literature around this topic. Use of black box testing method in the automated acceptance testing of embedded systems can be seen as most reasonable option as it imitates the final user most accurately. Other methods would require more in-depth knowledge of the underlaying system of the device and this would clash with the basic definition of acceptance testing
+
+Method worked well in the AAT environment implemented in this master's thesis. AAT environment imitated final human user to the extent that it was possible to partly automate the manual testing of the payment terminal, which was the goal of this project.
+
+\section{Syntax for Test Suites}
+
+Robot Framework was selected as a testing framework of the AAT environment. Choice of the framework and therefore also the test syntax was done based on literature review and examination of different tools. Robot Framework was selected for its modularity and versatile and human readable test syntax. Use of RF proved to be sustainable and it was able to implement all the desired functionalities using the framework.
+
+For future research it is encouraged to arrange surveys and interviews related to the different acceptance testing frameworks. Research done within this master's thesis did not involve any investigation about current opinion atmosphere around the topic of acceptance testing tools used in testing of embedded software. This kind of research would be valuable to the future projects done in the field of automated acceptance testing.
+
+
 

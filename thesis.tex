@@ -94,6 +94,8 @@
 % finnish, swedish; and so on.
 \usepackage[finnish,english]{babel}
 
+\usepackage{hyphenat}
+
 
 % Font selection
 % ------------------------------------------------------------------
@@ -265,8 +267,8 @@
 % You can just fix the texts there. Just remember to check all the language
 % variants you use (they are all there in the same place). 
 % ------------------------------------------------------------------
-\newcommand{\TITLE}{An Open and General Numerical Control and Machine Vision Based Architecture for Payment Terminal Acceptance Test Automation}
-\newcommand{\FTITLE}{Avoin ja yleispätevä numeeriseen ohjaukseen ja konenäköteknologioihin pohjautuva maksupäätteiden automaattisen hyväksymistestausympäristön arkkitehtuuri}
+\newcommand{\TITLE}{\nohyphens{An Open and General Numerical Control and Machine Vision Based Architecture for Payment Terminal Acceptance Test Automation}}
+\newcommand{\FTITLE}{\nohyphens{Avoin ja yleispätevä numeeriseen ohjaukseen ja konenäköteknologioihin pohjautuva maksupäätteiden automaattisen hyväksymistestausympäristön arkkitehtuuri}}
 \newcommand{\DATE}{May 6, 2016}
 \newcommand{\FDATE}{6. toukokuuta 2016}
 
@@ -358,7 +360,7 @@
 % 1 is normal (no extra space), 1.3 is about one-half more space, and
 % 1.6 is about double line spacing.  
 % \linespread{1} % This is the default
-\linespread{1.3}
+\linespread{1.5}
 
 % Bibliography style
 % acm style gives you a basic reference style. It works only with numbered
@@ -380,7 +382,8 @@
 % You need a special package to hyphenate those words.
 \hyphenation{di-gi-taa-li-sta yksi-suun-tai-sta}
 
-
+% Uncomment to disable hyphenation
+% \usepackage[finnish=nohyphenation,english=nohyphenation]{hyphsubst}
 
 % The preamble ends here, and the document begins. 
 % Place all formatting commands and such before this line.
@@ -426,8 +429,6 @@ Hyväksymistestaus on ohjelmistotestauksen vaihe, jossa kehitettyä ohjelmistoa 
 Tämä diplomityö käsittelee ohjelmistotestaukseen liittyvää teoriaa, sulautettujen järjestelmien testausta sekä yllä mainittuja haasteita. Lisäksi diplomityö esittelee ehdotetun ympäristön maksupäätteiden automaattiseen hyväksymistestaukseen ja käsittelee siihen tarvittuja ohjelmistoja ja fyysisiä komponentteja.
 }
 
-
-
 % Acknowledgements
 % ------------------------------------------------------------------
 % Select the language you use in your acknowledgements
@@ -444,9 +445,8 @@ Tämä diplomityö käsittelee ohjelmistotestaukseen liittyvää teoriaa, sulaut
 
 I wish to thank my instructor Tatu Kairi and my supervisor Seppo Sierla for their great help and knowledge throughout the writing process of the master's thesis.
 
-I would also like to thank my manager Marko Klemetti for encouraging the writing process of this master's thesis.
+I would also like to thank my manager Marko Klemetti for encouraging the writing process of this master's thesis. My dearest thanks go towards my family and the members of !nerdclub for their great support throughout my studies and the process of writing this master's thesis.
 
-My final acknowledgments and thanks goes towards my family and the members of !nerdclub for their great support throughout my studies and the process of writing this master's thesis.
 \vskip 10mm
 
 \noindent San Jose, \DATE
