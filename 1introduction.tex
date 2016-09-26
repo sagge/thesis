@@ -3,37 +3,40 @@
 \chapter{Introduction}
 \label{chapter:intro}
 
-Software testing is a crucial part of modern software development and it is a commonly accepted fact that the earlier defects and errors in the software are found, the lower the cost of correcting those will be. Early detection of errors also increases the possibility to correct them properly. \emph{\citep{myers2011art}}
+Software testing is a crucial part of modern software development and it is a commonly accepted fact that the earlier defects and errors in the software are found, the lower the cost of correcting those will be. Early detection of errors also increases the possibility to correct them properly. \citep{myers2011art}
 
-Acceptance testing is the process of comparing the developed program to the initial requirements of the software \emph{\citep{myers2011art}}. Automated acceptance testing (AAT) phase should be executed whenever new features are added. Therefore, especially in agile software development, AAT plays an important role as new versions of software are being developed constantly. Automation can free valuable human resources from this process \emph{\citep{haugset2008automated}} and therefore lower the overall cost of the software.
+Acceptance testing is the process of comparing the developed program to the initial requirements of the software \citep{myers2011art}. Automated acceptance testing (AAT) process should be executed whenever new features are added. Therefore, especially in agile software development, AAT plays an important role as new versions of software are being developed rapidly. Automation can free valuable human resources from this process \citep{haugset2008automated} and therefore lower the overall cost of the software.
 
-According to \emph{\cite{sommerville2011software}} acceptance testing of a system should be executed in an environment as similar as possible to the production environment of the final product. System should also be tested with real data rather than with a simulated sample. When software is developed for an embedded system and therefore the production environment is an actual device, in this case a payment terminal, the acceptance testing should be executed on genuine payment terminal with truly interacting through the user interface (UI) of the machine. This also leads to a situation where concerns pointed out above are in fact being emphasized, as late detection of defects in embedded software can considerably raise the overall cost of the system \emph{\citep{ebert2009embedded}}.
+According to \cite{sommerville2011software}, acceptance testing of a system should be executed in an environment as similar as possible to the production environment of the final product. System should also be tested with real data rather than with a simulated sample. When software is developed for an embedded system and therefore the production environment is an actual device, also the acceptance testing should be executed on genuine device with truly interacting through the user interface (UI) of the machine. This also leads to a situation where concerns pointed out above are in fact being emphasized, as late detection of defects in embedded software can considerably raise the overall cost of the system \citep{ebert2009embedded}.
 
-\emph{\cite{sommerville2011software}} states that it is practically impossible to perfectly replicate the system's working environment and when considering an embedded system, this can be even harder. Buttons of the device have to be actually pressed and visual changes on the screen of the device have to be observed. In order to automate this, some sort of a test environment has to be implemented that can observe and manipulate the device through the real physical user interface, i.e. not simulating the keystrokes nor reading the LCD communication line. Some kind of joint hardware and software solution has to be created and it also has to mimic real human user as realistically as possible.
+\cite{sommerville2011software} states that it is practically impossible to perfectly replicate the system's working environment. When considering an embedded system, this can be even harder. Buttons of the device have to be actually pressed and visual changes on the screen of the device have to be observed. In order to automate this, a testing environment has to be implemented that can observe and manipulate the device through the real physical user interface, i.e. not simulating the keystrokes nor reading the LCD communication line. The testing environment has to incorporate both hardware and software solutions to mimic real human user as realistically as possible.
 
-This master's thesis will discuss the theories related to software testing, testing of embedded systems and the problems stated above. In addition, this master's thesis presents an architecture for automated acceptance testing of payment terminal software including the needed hardware and software.
+This master's thesis will discuss the theories related to software testing, testing of embedded systems and the challenges stated above. In addition, this master's thesis presents an architecture for automated acceptance testing of payment terminal software including the needed hardware and software.
 
-Research presented in this master's thesis was carried in co-operation with Eficode Oy and one of the main payment terminal software provider in the Nordic countries.
+Research presented in this master’s thesis was carried in co-operation with Eficode Oy and Nets Oy. Internationally Nets is one of the main payment terminal software providers in the Nordic countries.
 
 \section{Problem Statements}
 
-In order to survey the topic of this work at an adequate level, this master's thesis presents four different problem statements. Problem statements are as follows:
+In order to survey the topic of this work at an adequate level, this master's thesis presents five different problem statements. Problem statements are as follows:
 \begin{enumerate}
 \item What are the benefits of using open source software and how can the architecture be designed to maximally exploit these benefits?
-\item What are the distinguishing characteristics between different payment terminals that have impact on automated acceptance testing? How can the architecture be designed to adapt the system to different payment terminals with minimal effort?
+\item What are the distinguishing characteristics between different payment terminals that have impact on automated acceptance testing and how can the architecture be designed to adapt these with minimal effort?
 \item What kinds of test automation approaches exist and which approach is best suited for payment terminal acceptance test automation?
-\item How should test keywords used in test suites be defined to make
-the test suites compact and understandable? How should keywords be defined to make the tests reusable for other types of payment terminals?
+\item How should the test syntax be defined in order to make the test suites compact and understandable while accommodating the needs of different payment terminals?
 \end{enumerate}
 
 \section{Structure of the Master's Thesis}
 \label{section:structure} 
 
-This master's thesis first discusses the theories and literature related to the topic and then presents an architecture of automated test environment for payment terminal software acceptance testing. In the first section of this master's thesis the topic is introduced, problem statements are presented and structure of this work is explained.
+This master's thesis first discusses the theories and literature related to the topic and then presents an architecture of automated test environment for payment terminal software acceptance testing. In the first Chapter of this master's thesis, the topic is introduced, problem statements are presented and structure of this work is explained.
 
-Second section covers the literature review of the topic of the master's thesis. Each problem statements have related subsections and individual problem statements are being discussed in those sections. Each subsection first gives an introduction from problem statement's point of view followed by the most relevant references around the topic. Subsections point out what has been done earlier and how the fundamental aspects of these previous works can be used as a basis for this work.
+Second Chapter covers the literature review of the topic of the master's thesis. Each problem statements have related sections and individual problem statements are being discussed in those sections. Each section first gives an introduction from problem statement's point of view followed by the most relevant references around the topic. Sections analyze what has been done earlier and how the fundamental aspects of these previous works can be used as a basis for this work.
 
-Third section of the master's thesis presents the proposed architecture for automated acceptance test environment for payment terminal software based on the literature review done in the previous section. Section presents the fundamental parts of hardware and software needed for this kind of an environment. This section has diagrams of proposed software architecture as well as fundamental design of the needed hardware.
+Third Chapter of the master's thesis presents the proposed architecture for automated acceptance test environment for payment terminal software based on the literature review done in the previous Chapter. Chapter presents the fundamental parts of hardware and software needed for this kind of an environment. This section has diagrams of proposed software architecture as well as fundamental design of the needed hardware.
 
-Fourth and the final section concludes the research done on this master's thesis and will summarize the benefits obtained by this kind of an environment.
+Fourth Chapter describes what was needed in order to achieve the AAT environment described in the previous Chapter. Different hardware and software subsystems of the AAT environment are presented and described. Implemented AAT environment and its subsystems are visualized in this Chapter using images and diagrams.
+
+Fifth Chapter discusses the presented problem statements based on the proposal and implementation of the AAT environment described in the previous Chapters. Future research topics are also presented related to each problem statement. 
+
+Sixth and the final section concludes the research done on this master's thesis and will summarize the benefits obtained by this kind of an environment.
 

@@ -96,6 +96,7 @@
 
 \usepackage{hyphenat}
 
+\usepackage[parfill]{parskip}
 
 % Font selection
 % ------------------------------------------------------------------
@@ -183,7 +184,11 @@
 % Subfigure package allows you to use subfigures (i.e. many subfigures
 % within one figure environment). These can have different labels and
 % they are numbered automatically. Check the package documentation. 
-\usepackage{subfigure}
+% \usepackage{subfigure}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 % The titlesec package can be used to alter the look of the titles 
 % of sections, chapters, and so on. This example uses the ``medium'' 
@@ -411,11 +416,11 @@
 % Abstract in English
 % ------------------------------------------------------------------
 \thesisabstract{english}{
-Software testing is a crucial part of modern software development and it is commonly accepted fact that the earlier software defects and -errors are found, the lower the cost of correcting those will be. Early detection of errors also increases the possibility to correct them properly.
+Software testing is a crucial part of modern software development and it is commonly accepted fact that the earlier software defects and errors are found, the lower the cost of correcting those will be. Early detection of errors also increases the possibility to correct them properly.
 
-Acceptance testing is a process of comparing the developed program to the initial requirements. Acceptance testing of a system should be executed in an environment as similar as possible to the production environment of the final product. This master's thesis will discuss how to address these guidelines in automated acceptance testing environment of payment terminal software.
+Acceptance testing is a process of comparing the developed program to the initial requirements. Acceptance testing of a system should be executed in an environment as similar as possible to the production environment of the final product. This master's thesis will discuss how to address these in automated acceptance testing environment of payment terminal software.
 
-This  master's thesis will discuss the theories related to software testing, testing of embedded systems and the challenges stated above. Master's thesis will present a proposed architecture for automated acceptance testing of payment terminals including the needed hardware and software.
+This  master's thesis will discuss the theories related to software testing, testing of embedded systems and the challenges related to the topic. Master's thesis will present a proposed architecture for automated acceptance testing of payment terminals including the needed hardware and software.
 
 }
 
@@ -424,9 +429,9 @@ This  master's thesis will discuss the theories related to software testing, tes
 \thesisabstract{finnish}{
 Ohjelmistotestaus on tärkeä osa modernia ohjelmistotuotantoa ja on yleisesti tunnustettu, että mitä aiemmin virheet ohjelmistosta löytyvät, sitä edullisempaa niiden korjaaminen tulee olemaan. Aikainen virheiden havaitseminen myös edesauttaa virheiden perusteellista ja laadukasta korjaamista.
 
-Hyväksymistestaus on ohjelmistotestauksen vaihe, jossa kehitettyä ohjelmistoa verrataan alkuperäisiin ohjelmistovaatimuksiin. Ohjelmiston hyväksymistestaus tulisi suorittaa lopullista tuotantoympäristöä mahdollisimman hyvin vastaavassa ympäristössä. Tämä diplomityö käsittelee näitä ohjeistuistuksia maksupäätteiden autommaattisen hyväksymistestauksen ympäristössä.
+Hyväksymistestaus on ohjelmistotestauksen vaihe, jossa kehitettyä ohjelmistoa verrataan alkuperäisiin ohjelmistovaatimuksiin. Ohjelmiston hyväksymistestaus tulisi suorittaa lopullista tuotantoympäristöä mahdollisimman hyvin vastaavassa ympäristössä. Tämä diplomityö käsittelee näitä ohjeistuksia maksupäätteiden automaattisen hyväksymistestauksen ympäristössä.
 
-Tämä diplomityö käsittelee ohjelmistotestaukseen liittyvää teoriaa, sulautettujen järjestelmien testausta sekä yllä mainittuja haasteita. Lisäksi diplomityö esittelee ehdotetun ympäristön maksupäätteiden automaattiseen hyväksymistestaukseen ja käsittelee siihen tarvittuja ohjelmistoja ja fyysisiä komponentteja.
+Tämä diplomityö käsittelee ohjelmistotestaukseen liittyvää teoriaa, sulautettujen järjestelmien testausta sekä aiheeseen liittyviä haasteita. Lisäksi diplomityö esittelee ympäristön maksupäätteiden automaattiseen hyväksymistestaukseen ja käsittelee siihen tarvittuja ohjelmistoja ja fyysisiä komponentteja.
 }
 
 % Acknowledgements
