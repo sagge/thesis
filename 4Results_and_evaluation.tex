@@ -3,7 +3,7 @@
 \chapter{Results and Evaluation}
 \label{chapter:Results and Evaluation}
 
-This chapter covers the subsystems and steps taken that were needed to achieve the testing environment described in Chapter~\ref{chapter:Proposed architecture}. This chapter first discusses the arrangements related to the hardware of the framework and then software related arrangements are presented and described. After presenting the built AAT environment, achieved results are discussed and finally the test environment presented in this thesis is evaluated.
+This Chapter covers the subsystems and steps taken that were needed to achieve the testing environment described in Chapter~\ref{chapter:Proposed architecture}. This Chapter first discusses the arrangements related to the hardware of the framework and then software related arrangements are presented and described. After presenting the built AAT environment, achieved results are discussed and finally the test environment presented in this thesis is evaluated based on whether it fulfilled the requirement of automating the acceptance testing of payment terminals set by the customer.
 
 \section{Hardware Arrangements}
 \label{section:Hardware arrangements}
@@ -17,7 +17,7 @@ Main components of the AAT environment are the robot that handles the manipulati
 \subsection{The Robot}
 \label{subsection:Robot}
 
-As suggested in Section \ref{subsection:The Robot proposal}, ShapeOko 2 open source 3-axis CNC milling machine was used as the robot manipulating the payment terminals. ShapeOko was built according to the instructions found from the homepage of the project \citep{shapeoko}. Construction was altered only regarding to the tool that was used as the spindle motor was substituted by 3D-printed pushing tool.
+As suggested in section \ref{subsection:The Robot proposal}, ShapeOko 2 open source 3-axis CNC milling machine was used as the robot manipulating the payment terminals. ShapeOko was built according to the instructions found from the homepage of the project \citep{shapeoko}. Construction was altered only regarding to the tool that was used as the spindle motor was substituted by 3D-printed pushing tool.
 
 ShapeOko 2 has a working area of about 300 mm x 300 mm x 60 mm which means that it can accommodate up to three payment terminals at same time in the working area. This allows parallel test case execution i.e. test cases can be run at the same time with different terminals. Arrangement of the devices was implemented by dividing the work area into three sections. Each payment terminal was attached to a standard sized MDF-plate and each section of the working are can accommodate one of these MDF-plates. Holes were drilled into the working area and nuts were inserted into these holes at the back of the work bench. MDF-plates attach to these holes with screws enabling easy installation and removal of plates with different models of payment terminals. MDF-plates can be seen in Figure \ref{fig:card_feeder_2}.
 
@@ -32,7 +32,7 @@ ShapeOko 2 has a working area of about 300 mm x 300 mm x 60 mm which means that 
 
 Each axis of the robot is controlled by stepper motors. Use of stepper motors instead of servo motors offers affordable way of controlling each axis in a relatively fast and reliable manner. X- and Z- axises are both manipulated using one stepper motor on each axle and bigger Y-axis is manipulated using two parallel stepper motors. Manipulation of payment terminal buttons stresses the machine much less than actual milling of materials that the machine is designed for and, allowing faster movement of the machine that would be possible when executing actual milling job.
 
-The robot was controlled using G-code that was sent from the main computer to an Arduino Uno attached to the robot. Arduino Uno and the main computer were connected via USB connection. More detailed description of the electronics can be found from Section \ref{subsection:Computing hardware}.
+The robot was controlled using G-code that was sent from the main computer to an Arduino Uno attached to the robot. Arduino Uno and the main computer were connected via USB connection. More detailed description of the electronics can be found from section \ref{subsection:Computing hardware}.
 
 Section \ref{subsection:The Robot proposal} suggested equipping the robot with a pushing tool and this was implemented to the final solution by 3D-printing the tool from PLA plastic. Tool consisted of two parts: cylindrical beam and a stem inside of it. Stem slides inside the beam and the two parts are separated with a spring. Spring provides the needed attenuation in order to forgive slight misalignments and too long trajectories when pushing the buttons of the payment terminals. Pushing tool can be observed in Figure \ref{fig:pushing_tool} and Figure \ref{fig:robot_final}.
 
@@ -58,7 +58,7 @@ Connection diagram and main electronic components are visualized in Figure \ref{
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=10cm]{images/electronics.png}
+    \includegraphics[width=0.9\textwidth]{images/electronics.png}
     \caption{Main electronic components and connection diagram of the robot. Note that Y-axis is manipulated using two stepper motors.}
     \label{fig:electronics}
   \end{center}
@@ -68,11 +68,11 @@ Connection diagram and main electronic components are visualized in Figure \ref{
 \subsection{Camera Arrangements}
 \label{subsection:Camera Arrangements}
 
-As suggested in Section \ref{subsection:computer vision hardware}, Raspberry Pi's own camera module was used for machine vision hardware. Camera was attached to the bottom of the Raspberry Pi's enclosure and the enclosure was attached to the Z-axis assembly of the robot to the opposite side where the pushing tool is located. Camera can be moved within the X- and Y-axis while Z-axis movement of the camera isn't possible. Depth of focus of the camera provides clear image of the screen even when the distance between the lens and the screen differs slightly between different payment terminal models. Camera attachment can be seen in Figure \ref{fig:camera}.
+As suggested in section \ref{subsection:computer vision hardware}, Raspberry Pi's own camera module was used for machine vision hardware. Camera was attached to the bottom of the Raspberry Pi's enclosure and the enclosure was attached to the Z-axis assembly of the robot to the opposite side where the pushing tool is located. Camera can be moved within the X- and Y-axis while Z-axis movement of the camera isn't possible. Depth of focus of the camera provides clear image of the screen even when the distance between the lens and the screen differs slightly between different payment terminal models. Camera attachment can be seen in Figure \ref{fig:camera}.
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=10cm]{images/camera.jpg}
+    \includegraphics[width=9cm]{images/camera.jpg}
     \caption{Camera is attached to the bottom of the Raspberry Pi's enclosure. Image also shows the attachment of the Raspberry Pi enclosure to the Z-axis assembly of the robot.}
     \label{fig:camera}
   \end{center}
@@ -83,13 +83,13 @@ As suggested in Section \ref{subsection:computer vision hardware}, Raspberry Pi'
 \subsection{Card Feeder Arrangements}
 \label{subsection:Card feeder arrangements}
 
-As suggested in Section \ref{subsection:Card feeder}, card feeder structures were 3D-printed using PLA plastic. Finalized card feeders consist of bottom plate, payment card holder and servo motor. Servo motor attaches directly to the bottom plate and card holder attaches to the arm of the servo motor.
+As suggested in section \ref{subsection:Card feeder}, card feeder structures were 3D-printed using PLA plastic. Finalized card feeders consist of bottom plate, payment card holder and servo motor. Servo motor attaches directly to the bottom plate and card holder attaches to the arm of the servo motor.
 
 Simplistic design can be used with different kinds of payment terminals which have the card slot at the bottom side of the device. Flexibility provided by the plastic structure and the payment card itself allows the solution to be compatible with most of the payment terminals of this type. Design of the card feeders is presented in Figure \ref{fig:card_feeder}. Figure \ref{fig:card_feeder_2} shows manufactured part installed to the environment presenting the servo installation and attachment of the card holder to the servo arm.
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=8.4cm]{images/card_feeder.png}
+    \includegraphics[width=0.8\textwidth]{images/card_feeder.png}
     \caption{CAD design of the card feeder. Servo motor attaches to the bigger plate on the left and card holder on the right attaches to the arm of the servo motor. Card holder is designed to fit standard sized payment card.}
     \label{fig:card_feeder}
   \end{center}
@@ -97,8 +97,8 @@ Simplistic design can be used with different kinds of payment terminals which ha
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=8.4cm]{images/card_feeder_2.jpg}
-    \caption{Card feeder installed to the environment. Image also presents the idea of MDF-plates described in Section \ref{subsection:Robot}.}
+    \includegraphics[width=0.8\textwidth]{images/card_feeder_2.jpg}
+    \caption{Card feeder installed to the environment. Image also presents the idea of MDF-plates described in section \ref{subsection:Robot}.}
     \label{fig:card_feeder_2}
   \end{center}
 \end{figure}
@@ -107,7 +107,7 @@ Simplistic design can be used with different kinds of payment terminals which ha
 \section{Software Arrangements}
 \label{section:Software arrangements}
 
-As proposed in Section \ref{section:software}, this chapter describes the decisions and arrangements regarding to the software point of view of the AAT environment. The initial proposal was followed rather loyally though some additional arrangements had to be implemented to the environment in order to increase usability and effectiveness.
+As proposed in section \ref{section:software}, this Chapter describes the decisions and arrangements regarding to the software point of view of the AAT environment. The initial proposal was followed rather loyally though some additional arrangements had to be implemented to the environment in order to increase usability and effectiveness.
 
 The software architecture was implemented in a modular way in order to support the modularity of the hardware design. Implementation only included open source or self-made software components from the operating system to individual software libraries used in the AAT environment.
 
@@ -116,7 +116,7 @@ This section describes the individual software components of the AAT environment
 \subsection{Software Architecture}
 \label{subsection:Software architecture}
 
-As suggested in the Section \ref{section:software}, Raspbian Wheesy Debian-based operating system was used with the Rasbperry Pi 2 Model B single-board computer. Operating system was used to run the test framework, test libraries and other software components and to handle the communication with different subsystems of the AAT environment.
+As suggested in the section \ref{section:software}, Raspbian Wheesy Debian-based operating system was used with the Rasbperry Pi 2 Model B single-board computer. Operating system was used to run the test framework, test libraries and other software components and to handle the communication with different subsystems of the AAT environment.
 
 Robot Framework was used as a test framework for its modularity, simplicity and versatility. RF was run on top of Python runtime environment and all test libraries were written using Python programming language \citep{python}. Python test libraries were implemented to handle the needed serial communication with the Arduino board on ShapeOko 2 and to the other Arduino board used for controlling the card feeder servo motors. Picamera \citep{picamera} Python library was used for providing the needed Python interface for communication with the Raspberry Pi camera module. Overall visualization of the software architecture can be observed in Figure \ref{fig:software_architecture}.
 
@@ -156,19 +156,19 @@ By dividing the configuration files, easy modification and addition of new devic
 \subsection{Robot Framework Test Framework}
 \label{subsection:Robot Framework and libraries}
 
-As proposed in Section \ref{subsection:test framework}, Robot Framework was used as the test framework for the AAT environment presented in this master's thesis. RF was equipped with several different test libraries to achieve the desired functionality of the AAT environment.
+As proposed in section \ref{subsection:test framework}, Robot Framework was used as the test framework for the AAT environment presented in this master's thesis. RF was equipped with several different test libraries to achieve the desired functionality of the AAT environment.
 
-RF is a generic keyword-driven test framework and this means that the keywords used for different test steps can be defined at a desired level of abstraction. Lowest abstraction level would be that one keyword would handle only one library method and highest would be that one keyword would be responsible for the whole test case. This allows high versatility but also makes the developer responsible of writing test cases according to commonly accepted best practices. Test cases developed in the scope of this master's thesis were developed to be as human readable as possible and to mimic the mindset of human when dividing the test cases into steps. This naturally depends on the person that is planning the test steps but it was attempted to make the division between each test steps as clear as possible.
+RF is a generic keyword-driven test framework and this means that the keywords used for different test steps can be defined at a desired level of abstraction. Lowest abstraction level would be that one keyword would handle only one library method and highest would be that one keyword would be responsible for the whole test case. This allows high versatility but also makes the developer responsible of writing test cases according to commonly accepted best practices. Test cases developed in the scope of this master's thesis were implemented to be as human readable as possible. Also the devision of the test cases into test steps was intended to be intuitive. This naturally depends on the person that is planning the test steps but it was attempted to make each test step as clear as possible.
 
 Test cases and steps were also divided into different keywords in order to achieve reusability. According to \cite{clean-code} any code written should be as readable and understandable as possible and these directions were used as guidelines when the test cases were implemented. It is also advised that code should be written in highly modular manner and this was followed when the keywords were combined in different abstraction levels.
 
-Keywords used in the test cases were defined in three different levels: test library keywords, shared keywords and test suite specific keywords. Test library keywords are the most low level keywords and implement the functionality between RF and SUT using different interfaces. These were written using Python language. 
+Keywords used in the test cases were defined in three different levels: test library keywords, shared keywords and test suite specific keywords. Test library keywords are the most low level keywords and implement the functionality between RF and SUT using different interfaces. These were written using Python language. Test suite keywords, on the other hand, are the most high level keywords. These are defined within the test suite files and are only used within the particular suite.
 
 AAT environment also introduced a resource file for combining the keywords that were shared with different test suites. Abstraction level of keywords found from this file can be qualified as middle or high level. Resource file is also used for defining common test libraries between test suites and common set-up and tear-down commands of test cases and suites. Resource file is imported to each test suite file. Example of partial resource file can be seen in Figure \ref{fig:resource}
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=12cm]{images/resource.png}
+    \includegraphics[width=\textwidth]{images/resource.png}
     \caption{An example of a partial resource file for Robot Framework tests.}
     \label{fig:resource}
   \end{center}
@@ -178,9 +178,9 @@ AAT environment also introduced a resource file for combining the keywords that 
 \subsection{Robot Control and Card Feeder Libraries}
 \label{subsection:libraries}
 
-For sending the control commands to the ShapeOko 2 robot with Robot Framework, a robot control library was implemented using Python language. Control commands for the robot are given using G-code commands and those are being sent using serial communication protocol. Library defines keywords that can be used within the keyword definitions and test cases of the RF acceptance tests.
+For sending the control commands to the ShapeOko 2 robot with Robot Framework, a robot control library was implemented using Python language. Control commands for the robot are given using G-code commands and those are being sent using serial communication protocol. The library defines keywords that can be used within the test cases. As RF supports combining the low-level keywords into higher level keywords, the library keywords were implemented to be reasonably generic. This helped to keep the library as simple and as possible.
 
-Desired G-code commands are being produced according to the configuration files described in Section \ref{subsection:Software architecture}. Library reads the coordinates of the devices and different buttons and by combining these, forms the needed G-code command to drive the robot into particular location. Library has a \emph{go\_to()}-method which takes the button name as parameter to drive the robot into the desired position. \emph{Press\_button()}-method is used to press the button when to robot is reached the desired position on top of the button.
+Desired G-code commands are being produced according to the configuration files described in section \ref{subsection:Software architecture}. Library reads the coordinates of the devices and different buttons and by combining these, forms the needed G-code command to drive the robot into particular location. Library has a \emph{go\_to()}-method which takes the button name as parameter to drive the robot into the desired position. \emph{Press\_button()}-method is used to press the button when to robot is reached the desired position on top of the button.
 
 Library has methods for setting the home position which is used in the initialization phase of the library after it has been imported into a RF test suite. Library also implements methods for going into home position, going to the right position for image capture and individual methods for lowering and raising the pushing tool of the robot. These can be used as keywords within the test cases and they work in respect to the device locations.
 
@@ -198,7 +198,7 @@ Servo motors of the card feeders are controlled using PWM control signals. The A
 \subsection{Computer Vision Library}
 \label{subsection:Computer vision library}
 
-As proposed in Section \ref{subsection:test libraries}, computer vision library was implemented for extracting the optical features from the display to a format that can be interpreted programmatically. The main task of the computer vision library is to interpret the text displayed on the screen of the payment terminal.
+As proposed in section \ref{subsection:test libraries}, computer vision library was implemented for extracting the optical features from the display to a format that can be interpreted programmatically. The main task of the computer vision library is to interpret the text displayed on the screen of the payment terminal.
 
 Computer vision library was implemented using Python language and Tesseract optical character recognition (OCR) engine is used to extract the found characters to textual format. Image captured by the Raspberry Pi camera module is slightly manipulated in order to make the text extraction more efficient and reliable. Image manipulations are made using OpenCV Python library \citep{opencv}. Image is first being slightly blurred using Gaussian blur filter in order to reduce the amount of disturbance caused by pixel edges of the display. Color space of the image is then converted to gray-scale. Finally, the gray-scale image is converted into binary BW-image by comparing the pixel value to a certain threshold value. The threshold value is adjusted according to the screen brightness and lightning conditions of the space where the robot is situated. These image manipulations produce an image where text in the display is clearly distinguishable from the other features providing good foundation for the character recognition.
 
@@ -217,20 +217,18 @@ Variables section defines all the used variables within the test cases. Variable
 
 Test cases section of the test suite files are used for defining all the test cases within the test suite and all the test steps included in the test cases. Test cases are defined by naming them in the first line and then defining the test steps by indenting the names of the used keywords with at least two space characters or one tab character under the name of the test case.
     
-Keywords are defined in the same way as test cases. Each keyword definition begins with the name of the keyword followed by indented names of used lower level keywords or library methods. Keywords can be built modularly into different layers by using lower level keywords in higher level keyword definitions.
-
-Example test case can be seen in Figure \ref{fig:invalid_pin_test} as proposed test case syntax was followed.
+Keywords are defined in the same way as test cases. Each keyword definition begins with the name of the keyword followed by indented names of used lower level keywords or library methods. Keywords can be built modularly into different layers by using lower level keywords in higher level keyword definitions. Example test case can be seen in Figure \ref{fig:invalid_pin_test}.
 
 \subsection{Test Results}
 \label{subsection:Test result syntax}
 
-For the testing to be actually useful and informative, clear test reports and error descriptions have to be generated. Robot Framework is useful for this purpose as it automatically generates two types of clear and easily understandable test result files after executing the test suite under examination. These files are outputted in \emph{.html} format making it possible examine the reports interactively using web browser.
+For the testing to be actually useful and informative, clear test reports and error descriptions have to be generated. Robot Framework is useful for this purpose as it generates by default three types of clear and easily understandable test result files after executing the test suite under examination. Two files are outputted in \emph{.html}-format making it possible to examine the reports interactively using web browser. One file is also outputted in \emph{.xml}-format making it convenient to integrate the test results into other testing tools. RF also supports generation of other types of reports out-of-the-box and it is possible to produce for example \emph{xUnit}-styled report from the test execution. \citep{Rfuserguide}
 
 \emph{Report.html}-file can be user to review the overall status of executed test suites and cases. This report gives an overall view to the testing project and different outcomes of the tests are marked in bright colors. The green color represents passed test and red color represents failed test. Example of passed test report file can be seen in Figure \ref{fig:passed report} and example of failed test report can be seen in Figure \ref{fig:failed report}.
 
 \emph{Log.html}-file contains more detailed representation of the test cases. Each test step is shown here and the internal keywords and library methods used by the keyword are layered under each test step. If test step fails during the test execution, the stack trace of that particular command is added to the log file and can be easily observed. Example of log file can be seen in Appendix \ref{chapter:first-appendix}.
 
-Robot Frameworks also allows setting up threshold limits for test suites that are used to determine whether the test suite has passed or failed. For example, the threshold can be set to 90 \% and if over 90 \% of test cases within the test suite are passed, the test suite is being considered as having passed successfully. Test cases can also be marked as critical meaning that if those particular test cases fail, the test suite is never considered as passed.
+Robot Framework also allows tagging the test cases with different kinds of tags. Tags can be used to group different test cases for test execution and they can be also be used for marking the criticality of the test case. The overall result of the test execution is determined based on the passed critical tests. If any of the test cases that are marked with \emph{critical} tag fails, the overall test execution is considered failed. In other words, if the test run contains tests with \emph{critical} and \emph{non-critical} tags, the non-critical tests can fail without having an effect to the overall result of the test execution. \citep{Rfuserguide}
 
 \begin{figure}[ht]
   \begin{center}

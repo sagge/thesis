@@ -3,11 +3,13 @@
 \chapter{Proposed Architecture}
 \label{chapter:Proposed architecture}
 
-Based on the requirements pointed out on Chapter~\ref{chapter:Payment terminal acceptance testing}, this part of the master's thesis will present an architecture for automated acceptance testing environment for payment terminal software. Components of the environment can be divided into hardware and software components and this Chapter is divided to sections accordingly.
+Based on the requirements pointed out in Chapter~\ref{chapter:Payment terminal acceptance testing}, this part of the master's thesis will present an architecture for automated acceptance testing environment for payment terminal software. Components of the environment can be divided into hardware and software components and this Chapter is divided to sections accordingly.
 
 In order to automate the acceptance testing of the payment terminals, test environment that can manipulate and observe the device through physical means has to be created. In other words, environment has to have some sort of a robot for pressing the buttons and screen of the device has to be observed. All this must be also controlled by some kind of combination of software.
 
-Motivation for this research came from a payment terminal software provider as they needed a cost-efficient and simple automated acceptance test environment in order to lower the costs and speed up the acceptance testing process of their software development. Eficode Oy took responsibility of implementing the system according to the best practices of the industry. This proposal was initial plan for the project and it will be presented in this Chapter.
+Motivation for this research came from a payment terminal software provider as they needed a cost-efficient and simple automated acceptance test environment in order to lower the costs and speed up the acceptance testing process of their software development. Costs of automated acceptance testing can be divided into three parts: environment costs, costs of creating new tests and maintenance costs \citep{laapas2014cost}. This Chapter will present an automated acceptance testing environment that is intended to minimize the costs of each part of this division.
+
+Eficode Oy took responsibility of implementing the system according to the best practices of the industry. This proposal was initial plan for the project and it will be presented in this Chapter.
 
 \section{Overview}
 
@@ -34,15 +36,15 @@ One of the options for automating the pressing of the buttons of the payment ter
 
 Other option for automatically pressing the buttons of the payment terminals would be utilizing the use of robotic arm. A robotic arm would be able to emulate a human user accurately and depending on the used robotic arm, simultaneous pressing of the buttons could also be possible. Drawback on the use a robotic arm is the relatively high purchasing price of accurate and powerful robotic arms. This could be overcame by manufacturing the robotic arm with own resources and using some openly available plans \citep{bcn3d} but this would require extensive use of time for building the arm from bottom up. For these reasons, the use robotic arm was not chosen.
 
-Third option for automating the key strokes of the payment terminal would be to use a portal robot. For pressing of one key of the payment terminal at a time would need a portal robot with at least three degrees of freedom. For the scope of this project, this would be enough as it is only required to press one button of the payment terminal at a time. Portal robot would also be easily able to adapt to different kinds of keyboard layouts and payment terminal sizes as it can travel across any coordinates within its workspace. By choosing a portal robot with a right-sized work space, it could be also possible to accommodate multiple payment terminals to the workspace at the same time. This would allow the execution of parallel acceptance tests within several different devices at the same time. For these reasons, the use of a portal robot for manipulating the buttons of the payment terminals was chosen.
+Third option for automating the key strokes of the payment terminal would be to use a cartesian coordinate robot (CCR). Cartesian coordinate robot is a robot whose axis of control are linear and are perpendicular to each other \citep{costa1995three}. For pressing of one key of the payment terminal at a time would need a cartesian coordinate robot with at least three degrees of freedom allowing the robot to move in three dimensional space. For the scope of this project, this would be enough as it is only required to press one button of the payment terminal at a time. CCR would also be easily able to adapt to different kinds of keyboard layouts and payment terminal sizes as it can travel across any coordinates within its workspace. By choosing a CCR with a right-sized work space, it could be also possible to accommodate multiple payment terminals to the workspace at the same time. This would allow the execution of parallel acceptance tests within several different devices at the same time. For these reasons, the use of a CCR for manipulating the buttons of the payment terminals was chosen.
 
-The master's thesis proposes the use of ShapeOko 2 3-axis Computer Numerical Control (CNC) milling machine \citep{shapeoko} to be used as a manipulator. Even though the machine is intended for milling purposes, it can be turned into a portal robot when milling tool is removed.
+The master's thesis proposes the use of ShapeOko 2 3-axis Computer Numerical Control (CNC) milling machine \citep{shapeoko} to be used as a manipulator. Even though the machine is intended for milling purposes, it can be turned into a cartesian coordinate robot when milling tool is removed. As ShapeOko 2 is a CCR with horizontal member supported at both ends, it can be also referred as a gantry robot as it resembles a gantry crane.
 
 ShapeOko 2 is an open-source hardware project and plans of the machine are openly available on their GitHub \citep{shapeoko_git}. This allows easy modifications to the hardware parts of the robot if needed.
 
 ShapeOko 2 is controlled by an Arduino board running a program called GRBL \citep{grbl}. Controlling program is an open-source, high-performance G-code interpreter and it is used for controlling CNC milling machines in general \citep{shapeoko}. G-code commands are sent from Raspberry Pi 2 to the Arduino on the robot using serial communication.
 
-Robot should be equipped with a pushing tool that can be manipulate the buttons. Pushing tool can be easily manufactured using for example 3D-printing techniques.
+Robot should be equipped with a pushing tool that can be manipulate the buttons. Pushing tool can be easily manufactured using for example 3D-printing techniques. Design of the pushing tool can be seen in Figure~\ref{fig:pushing_tool}
 
 \FloatBarrier
 \subsection{Computer Vision Hardware}
@@ -54,9 +56,9 @@ Therefore, AAT environment also requires computer vision as changes on the scree
 
 As the size and the location of the display differs between different models of payment terminals, optical hardware has to be able to adapt to different kinds of imaging circumstances. As it is proposed that working area of the robot could be equipped with several payment terminals at the same time, also the displays of the payment terminals have to be able to be read regardless of the number of the devices under test.
 
-One solution for this could be equipping the AAT environment with multiple stationary cameras, more precisely one camera per each device under test. If the cameras would be stationary, this would create boundaries for the location and the size of payment terminal displays depending on the location of the optical hardware. Portal robot proposed also has a rigid structure moving on top of the devices under test and this could cause blocking of the visual contact between camera and the display of the payment terminal.
+One solution for this could be equipping the AAT environment with multiple stationary cameras, more precisely one camera per each device under test. If the cameras would be stationary, this would create boundaries for the location and the size of payment terminal displays depending on the location of the optical hardware. Cartesian coordinate robot proposed also has a rigid structure moving on top of the devices under test and this could cause blocking of the visual contact between camera and the display of the payment terminal.
 
-Other solution would be having a moving camera that could be driven to a needed location in order to perform machine vision tasks. Location of the display could be configured regarding to the payment terminal model and this solution would adapt easily for different kinds of display layouts. Moving of the camera equipment can be achieved easily by attaching the camera directly to the portal robot. This will however exclude the ability to simultaneously pressing the buttons and reading the screen as robot has to be driven to certain position for capturing the image from the display. Regardless of this limitation, this solution was chosen. More precisely, the camera was situated to the Z-axis assembly of the robot to the other side in respect to the pushing tool. This would minimize the required transitions when changing from pressing the buttons to capturing the images as the displays are typically located on top the numeric keypads on the payment terminals.
+Other solution would be having a moving camera that could be driven to a needed location in order to perform machine vision tasks. Location of the display could be configured regarding to the payment terminal model and this solution would adapt easily for different kinds of display layouts. Moving of the camera equipment can be achieved easily by attaching the camera directly to the robot. This will however exclude the ability to simultaneously pressing the buttons and reading the screen as robot has to be driven to certain position for capturing the image from the display. Regardless of this limitation, this solution was chosen. More precisely, the camera was situated to the Z-axis assembly of the robot to the other side in respect to the pushing tool. This would minimize the required transitions when changing from pressing the buttons to capturing the images as the displays are typically located on top the numeric keypads on the payment terminals.
 
 \FloatBarrier
 \subsection{Card Feeder}
@@ -66,7 +68,7 @@ In addition to the manipulation of the payment terminal buttons, also the card f
 
 Other option would be manufacturing generally adaptable card feeders that could be used with different kinds of payment terminals. This solution would allow simultaneously inserting and removing of the payment card while manipulating the buttons with the robot. Advantage of this solution would also be that card feeders could know their state even if the software would crash as well as the reset functionality would be more simple to implement.
 
-As insertion and removal of the credit card might be hard to accomplish in a simple way using just the robot described in previous section. This work proposes the use of generally designed card feeders to accomplish this task. Proposed card feeders consist of 3D-printed base plate that attaches to the payment terminal, servo motor and 3D-printed tray that attaches to the servo and to the credit card.
+As insertion and removal of the credit card might be hard to accomplish in a simple way using just the robot described in previous section. This work proposes the use of generally designed card feeders to accomplish this task. Proposed card feeders consist of 3D-printed base plate that attaches to the payment terminal, servo motor and 3D-printed tray that attaches to the servo and to the credit card. Design of the card feeder can be seen in Figure~\ref{fig:card_feeder}
 
 Card feeders were designed in a way that they can be used with any types payment terminals that have the card slot at the bottom side of the device. Standard hobby servos were used as servo motors in order to keep the cost of the setup low.
 
@@ -102,7 +104,7 @@ Example of a test case can be seen in Figure~\ref{fig:invalid_pin_test}. This te
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=10cm]{images/example_test.png}
+    \includegraphics[width=\textwidth]{images/example_test.png}
     \caption{Example test case for invalid PIN code test}
     \label{fig:invalid_pin_test}
   \end{center}
@@ -114,7 +116,7 @@ Example of a test case can be seen in Figure~\ref{fig:invalid_pin_test}. This te
 
 As can be seen on Figure~\ref{fig:modular_architecture}, RF requires external libraries to connect to the system under test. In the case of this AAT environment, those libraries would be a library for machine control, a library for computer vision and a library for card feeder manipulation. All these libraries can be written using Python programming language that is supported out of the box by Robot Framework \citep{robotframework}.
 
-For machine control library, the environment has to be able to send G-code commands through USB serial communication to Arduino on the robot. For this, pySerial Python library is proposed as it includes implementation of the needed serial communication functionalities \citep{pyserial}.
+For machine control library, the environment has to be able to send G-code commands through universal serial bus (USB) connection to Arduino on the robot. For this, pySerial Python library is proposed as it includes implementation of the needed serial communication functionalities \citep{pyserial}.
 
 For the computer vision tasks of the environment, textual messages on the display are usually those that need to be verified. For this, character recognition is needed. Open source optical character recognition (OCR) engine called Tesseract OCR was chosen \citep{tesseract}. It was initially developed by HP but since 2006 it has been developed by Google. In order to use Tesseract OCR with Python, a library named pytesseract was used \citep{pytesseract}.
 
